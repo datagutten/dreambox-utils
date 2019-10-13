@@ -64,6 +64,8 @@ class timer extends common
         $response = Requests::post(sprintf('http://%s/web/timerchange', $this->dreambox_ip), [], $timer);
         $response->throw_for_status();
         $xml = simplexml_load_string($response->body);
-        return $xml->{'e2simplexmlresult'}->{'e2statetext'};
+        $status = $xml->{'e2state'};
+
+        return $xml->{'e2statetext'};
     }
 }
