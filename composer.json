@@ -17,5 +17,6 @@
         "psr-4": {
             "datagutten\\dreambox\\web\\": "src"
         }
-    }
+    },
+    "bin": ["utils/save_channels.php"]
 }
