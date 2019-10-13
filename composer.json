@@ -1,0 +1,21 @@
+{
+    "name": "datagutten/dreambox-utils",
+    "description": "Manage timers and get EPG data from dreambox",
+    "type": "library",
+    "require": {
+        "rmccue/requests": "^1.7",
+        "datagutten/tools": "^1.1"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "datagutten",
+            "email": "datagutten@datagutten.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "datagutten\\dreambox\\web\\": "src"
+        }
+    }
+}
