@@ -10,7 +10,7 @@ class timerTest extends TestCase
     {
         $file = sprintf('%s/channels_127.0.0.1.json',  realpath(__DIR__.'/../src'));
         //$string = '"1:0:19:12D:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3","1:0:19:515:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3 Lydteks","1:0:1:5EC:1:46:FFFF014A:0:0:0:":"NRK Tegnspr\u00e5k"';
-        copy(__DIR__.'/channels_127.0.0.1.json', $file);
+        copy(__DIR__.'/test_channels_127.0.0.1.json', $file);
     }
 
     public function test__construct()
