@@ -28,6 +28,6 @@ class common
 
     function channel_file()
     {
-        return sprintf('%s/channels_%s.json',  __DIR__, $this->dreambox_ip);
+        return sprintf('%s/channels_%s.json',  realpath(__DIR__), $this->dreambox_ip);
     }
 }
