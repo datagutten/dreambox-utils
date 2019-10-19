@@ -19,7 +19,7 @@ addons:
    - apache2
 
 install:
-  - ln -s tests/emulator /var/www/html/web
+  - sudo ln -s tests/emulator /var/www/html/web
   - if [ "$IGNORE_PLATFORM_REQS" == 'true' ]; then composer install --no-interaction --ignore-platform-reqs;
     else composer install --no-interaction;
     fi
