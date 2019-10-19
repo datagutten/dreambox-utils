@@ -49,18 +49,29 @@ class timer extends common
         'sessionid'=>'0');
 
     /**
-     * @param string $channel Dreambox channel id
+     * @param string $channel_name Channel name
+     * @throws Exception Channel id not found
+     * @return string Channel id
+     */
+    function channel_id($channel_name)
+    {
+        $channel_id = array_search($channel_name, $this->channels);
+        if ($channel_id === false)
+            throw new Exception(sprintf('Channel id not found for %s', $channel_name));
+        else
+            return $channel_id;
+    }
+
+    /**
+     * @param string $channel_id Dreambox channel id
      * @param int $begin Recording start timestamp
      * @param int $end Recording end timestamp
      * @param string $name
      * @return string Response from dreambox
      * @throws Requests_Exception
      */
-    public function add_timer($channel, $begin, $end, $name)
+    public function add_timer($channel_id, $begin, $end, $name)
     {
-        $channel_id = array_search($channel, $this->channels);
-        if ($channel_id === false)
-            return null;
         $timer = $this->timer_template;
         $timer['sRef'] = $channel_id;
         $timer['begin'] = $begin;

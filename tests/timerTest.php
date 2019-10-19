@@ -19,13 +19,20 @@ class timerTest extends TestCase
         $this->assertIsArray($timer->channels);
         $this->assertSame('NRK Super/NRK3', $timer->channels['1:0:19:12D:9:46:FFFF016A:0:0:0:']);
     }
+    public function testGetChannelId()
+    {
+        $timer = new timer('127.0.0.1');
+        $channel_id = $timer->channel_id('NRK Super/NRK3');
+        $this->assertSame('1:0:19:12D:9:46:FFFF016A:0:0:0:', $channel_id);
+    }
 
     public function testAdd_timer()
     {
         $timer = new timer('127.0.0.1');
         $start = strtotime('16:00');
         $end = strtotime('17:00');
-        $response = $timer->add_timer('NRK Super/NRK3', $start, $end, 'test');
+        $channel_id = $timer->channel_id('NRK Super/NRK3');
+        $response = $timer->add_timer($channel_id, $start, $end, 'test');
         $this->assertEquals('Timer \'test\' added', $response);
     }
 
