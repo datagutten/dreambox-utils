@@ -20,5 +20,8 @@
             "datagutten\\dreambox\\web\\": "src"
         }
     },
-    "bin": ["utils/save_channels.php"]
+    "bin": ["utils/save_channels.php"],
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    }
 }
