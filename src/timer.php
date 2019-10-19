@@ -4,6 +4,7 @@
 namespace datagutten\dreambox\web;
 
 
+use Exception;
 use FileNotFoundException;
 use Requests;
 use Requests_Exception;
@@ -15,8 +16,9 @@ class timer extends common
     /**
      * timer constructor.
      * @param $dreambox_ip
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException Channel list file not found
      * @throws Requests_Exception
+     * @throws Exception Channel list file empty
      */
     function __construct($dreambox_ip)
     {
@@ -24,7 +26,10 @@ class timer extends common
         $file = $this->channel_file();
         if(!file_exists($file))
             throw new FileNotFoundException($file);
-        $this->channels = json_decode($file);
+        $data = file_get_contents($file);
+        $this->channels = json_decode($data, true);
+        if(empty($this->channels))
+            throw new Exception('Channel list not found');
     }
 
     public $timer_template=array(
