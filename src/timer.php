@@ -63,6 +63,19 @@ class timer extends common
     }
 
     /**
+     * @param string $channel_id Channel id
+     * @return mixed
+     * @throws Exception
+     */
+    function channel_id_reverse($channel_id)
+    {
+        if(!isset($this->channels[$channel_id]))
+            throw new Exception('No channel found for id '.$channel_id);
+        else
+            return $this->channels[$channel_id];
+    }
+
+    /**
      * @param string $channel_id Dreambox channel id
      * @param int $begin Recording start timestamp
      * @param int $end Recording end timestamp
@@ -83,5 +96,17 @@ class timer extends common
         $status = $xml->{'e2state'};
 
         return $xml->{'e2statetext'};
+    }
+
+    /**
+     * @return \SimpleXMLElement
+     * @throws Requests_Exception
+     * @throws \Requests_Exception_HTTP
+     */
+    public function get_timers()
+    {
+        $response = Requests::get(sprintf('http://%s/web/timerlist', $this->dreambox_ip));
+        $response->throw_for_status();
+        return simplexml_load_string($response->body);
     }
 }
