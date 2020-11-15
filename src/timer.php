@@ -79,17 +79,21 @@ class timer extends common
      * @param string $channel_id Dreambox channel id
      * @param int $begin Recording start timestamp
      * @param int $end Recording end timestamp
-     * @param string $name
+     * @param string $name Recording name
+     * @param string $description Recording description
      * @return string Response from dreambox
      * @throws Requests_Exception
      */
-    public function add_timer($channel_id, $begin, $end, $name)
+    public function add_timer($channel_id, $begin, $end, $name, $description='')
     {
         $timer = $this->timer_template;
         $timer['sRef'] = $channel_id;
         $timer['begin'] = $begin;
         $timer['end'] = $end;
         $timer['name'] = $name;
+        if(!empty($description))
+            $timer['description'] = $description;
+
         $response = Requests::post(sprintf('http://%s/web/timerchange', $this->dreambox_ip), [], $timer);
         $response->throw_for_status();
         $xml = simplexml_load_string($response->body);
