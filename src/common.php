@@ -17,7 +17,7 @@ class common
      * @param string $dreambox_ip IP to dreambox
      * @throws Requests_Exception Unable to connect to dreambox
      */
-    function __construct($dreambox_ip)
+    function __construct(string $dreambox_ip)
     {
         if(empty($dreambox_ip))
             throw new InvalidArgumentException('Dreambox IP empty');

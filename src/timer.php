@@ -9,6 +9,8 @@ use FileNotFoundException;
 use InvalidArgumentException;
 use Requests;
 use Requests_Exception;
+use Requests_Exception_HTTP;
+use SimpleXMLElement;
 
 class timer extends common
 {
@@ -54,7 +56,7 @@ class timer extends common
      * @throws Exception Channel id not found
      * @return string Channel id
      */
-    function channel_id($channel_name)
+    function channel_id(string $channel_name)
     {
         $channel_id = array_search($channel_name, $this->channels);
         if ($channel_id === false)
@@ -68,7 +70,7 @@ class timer extends common
      * @return mixed
      * @throws Exception
      */
-    function channel_id_reverse($channel_id)
+    function channel_id_reverse(string $channel_id)
     {
         if(!isset($this->channels[$channel_id]))
             throw new Exception('No channel found for id '.$channel_id);
@@ -85,7 +87,7 @@ class timer extends common
      * @return string Response from dreambox
      * @throws Requests_Exception
      */
-    public function add_timer($channel_id, $begin, $end, $name, $description='')
+    public function add_timer(string $channel_id, int $begin, int $end, string $name, $description='')
     {
         if(!preg_match('/[0-9A-F:]{30}/', $channel_id))
             throw new InvalidArgumentException('Invalid channel id: '.$channel_id);
@@ -100,15 +102,15 @@ class timer extends common
         $response = Requests::post(sprintf('http://%s/web/timerchange', $this->dreambox_ip), [], $timer);
         $response->throw_for_status();
         $xml = simplexml_load_string($response->body);
-        $status = $xml->{'e2state'};
+        //$status = $xml->{'e2state'};
 
         return $xml->{'e2statetext'};
     }
 
     /**
-     * @return \SimpleXMLElement
+     * @return SimpleXMLElement
      * @throws Requests_Exception
-     * @throws \Requests_Exception_HTTP
+     * @throws Requests_Exception_HTTP
      */
     public function get_timers()
     {
