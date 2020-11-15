@@ -6,6 +6,7 @@ namespace datagutten\dreambox\web;
 
 use Exception;
 use FileNotFoundException;
+use InvalidArgumentException;
 use Requests;
 use Requests_Exception;
 
@@ -86,6 +87,8 @@ class timer extends common
      */
     public function add_timer($channel_id, $begin, $end, $name, $description='')
     {
+        if(!preg_match('/[0-9A-F:]{30}/', $channel_id))
+            throw new InvalidArgumentException('Invalid channel id: '.$channel_id);
         $timer = $this->timer_template;
         $timer['sRef'] = $channel_id;
         $timer['begin'] = $begin;
