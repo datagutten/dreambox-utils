@@ -4,12 +4,12 @@
 namespace datagutten\dreambox\web;
 
 
+use datagutten\dreambox\web\objects;
 use Exception;
 use FileNotFoundException;
 use InvalidArgumentException;
 use Requests_Exception;
 use Requests_Exception_HTTP;
-use SimpleXMLElement;
 
 class timer extends common
 {
@@ -107,7 +107,8 @@ class timer extends common
     }
 
     /**
-     * @return SimpleXMLElement
+     * Get timers from dreambox
+     * @return objects\timer[]
      * @throws Requests_Exception
      * @throws Requests_Exception_HTTP
      */
@@ -115,6 +116,12 @@ class timer extends common
     {
         $response = $this->session->get('web/timerlist');
         $response->throw_for_status();
-        return simplexml_load_string($response->body);
+        $xml = simplexml_load_string($response->body);
+        $timers = [];
+        foreach($xml->{'e2timer'} as $timer)
+        {
+            $timers[] = new objects\timer($timer);
+        }
+        return $timers;
     }
 }

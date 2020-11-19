@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e2timerlist>
+    <e2timer>
+        <e2servicereference>1:0:1:1B67:7:46:FFFF0132:0:0:0:</e2servicereference>
+        <e2servicename>TV6 (N) (EPG)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Oppdater EPG</e2name>
+        <e2description></e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605492000</e2timebegin>
+        <e2timeend>1605492060</e2timeend>
+        <e2duration>60</e2duration>
+        <e2startprepare>1605491980</e2startprepare>
+        <e2justplay>1</e2justplay>
+        <e2afterevent>1</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685319, 15, 'record time changed, start prepare is now: Sun Oct 25 02:59:40 2020'), (1603591181, 5, 'activating state 1'), (1603591181, 6, 'prepare ok, waiting for begin'), (1603591200, 5, 'activating state 2'), (1603591200, 11, 'zapping'), (1603591260, 5, 'activating state 3'), (1603591260, 12, 'stop recording'), (1603591260, 15, 'record time changed, start prepare is now: Mon Oct 26 02:59:40 2020'), (1603677580, 5, 'activating state 1'), (1603677580, 6, 'prepare ok, waiting for begin'), (1603677600, 5, 'activating state 2'), (1603677600, 11, 'wakeup and zap'), (1603677660, 5, 'activating state 3'), (1603677660, 12, 'stop recording'), (1603677660, 15, 'record time changed, start prepare is now: Tue Oct 27 02:59:40 2020'), (1603763980, 5, 'activating state 1'), (1603763980, 6, 'prepare ok, waiting for begin'), (1603764000, 5, 'activating state 2'), (1603764000, 11, 'wakeup and zap'), (1603764060, 5, 'activating state 3'), (1603764060, 12, 'stop recording'), (1603764060, 15, 'record time changed, start prepare is now: Wed Oct 28 02:59:40 2020'), (1603850380, 5, 'activating state 1'), (1603850380, 6, 'prepare ok, waiting for begin'), (1603850400, 5, 'activating state 2'), (1603850400, 11, 'wakeup and zap'), (1603850460, 5, 'activating state 3'), (1603850460, 12, 'stop recording'), (1603850460, 15, 'record time changed, start prepare is now: Thu Oct 29 02:59:40 2020'), (1603936780, 5, 'activating state 1'), (1603936780, 6, 'prepare ok, waiting for begin'), (1603936800, 5, 'activating state 2'), (1603936800, 11, 'wakeup and zap'), (1603936860, 5, 'activating state 3'), (1603936860, 12, 'stop recording'), (1603936860, 15, 'record time changed, start prepare is now: Fri Oct 30 02:59:40 2020'), (1604023180, 5, 'activating state 1'), (1604023180, 6, 'prepare ok, waiting for begin'), (1604023200, 5, 'activating state 2'), (1604023200, 11, 'wakeup and zap'), (1604023260, 5, 'activating state 3'), (1604023260, 12, 'stop recording'), (1604023260, 15, 'record time changed, start prepare is now: Sat Oct 31 02:59:40 2020'), (1604109580, 5, 'activating state 1'), (1604109580, 6, 'prepare ok, waiting for begin'), (1604109600, 5, 'activating state 2'), (1604109600, 11, 'wakeup and zap'), (1604109660, 5, 'activating state 3'), (1604109660, 12, 'stop recording'), (1604109660, 15, 'record time changed, start prepare is now: Sun Nov  1 02:59:40 2020'), (1604195980, 5, 'activating state 1'), (1604195980, 6, 'prepare ok, waiting for begin'), (1604196000, 5, 'activating state 2'), (1604196000, 11, 'wakeup and zap'), (1604196060, 5, 'activating state 3'), (1604196060, 12, 'stop recording'), (1604196060, 15, 'record time changed, start prepare is now: Mon Nov  2 02:59:40 2020'), (1604282380, 5, 'activating state 1'), (1604282380, 6, 'prepare ok, waiting for begin'), (1604282400, 5, 'activating state 2'), (1604282400, 11, 'wakeup and zap'), (1604282461, 5, 'activating state 3'), (1604282461, 12, 'stop recording'), (1604282461, 15, 'record time changed, start prepare is now: Tue Nov  3 02:59:40 2020'), (1604368780, 5, 'activating state 1'), (1604368780, 6, 'prepare ok, waiting for begin'), (1604368800, 5, 'activating state 2'), (1604368800, 11, 'wakeup and zap'), (1604368860, 5, 'activating state 3'), (1604368860, 12, 'stop recording'), (1604368860, 15, 'record time changed, start prepare is now: Wed Nov  4 02:59:40 2020'), (1604455180, 5, 'activating state 1'), (1604455180, 6, 'prepare ok, waiting for begin'), (1604455200, 5, 'activating state 2'), (1604455200, 11, 'wakeup and zap'), (1604455260, 5, 'activating state 3'), (1604455260, 12, 'stop recording'), (1604455260, 15, 'record time changed, start prepare is now: Thu Nov  5 02:59:40 2020'), (1604541580, 5, 'activating state 1'), (1604541580, 6, 'prepare ok, waiting for begin'), (1604541600, 5, 'activating state 2'), (1604541600, 11, 'wakeup and zap'), (1604541662, 5, 'activating state 3'), (1604541662, 12, 'stop recording'), (1604541662, 15, 'record time changed, start prepare is now: Fri Nov  6 02:59:40 2020'), (1604627980, 5, 'activating state 1'), (1604627980, 6, 'prepare ok, waiting for begin'), (1604628000, 5, 'activating state 2'), (1604628000, 11, 'wakeup and zap'), (1604628060, 5, 'activating state 3'), (1604628060, 12, 'stop recording'), (1604628060, 15, 'record time changed, start prepare is now: Sat Nov  7 02:59:40 2020'), (1604714380, 5, 'activating state 1'), (1604714380, 6, 'prepare ok, waiting for begin'), (1604714400, 5, 'activating state 2'), (1604714400, 11, 'wakeup and zap'), (1604714460, 5, 'activating state 3'), (1604714460, 12, 'stop recording'), (1604714460, 15, 'record time changed, start prepare is now: Sun Nov  8 02:59:40 2020'), (1604800780, 5, 'activating state 1'), (1604800780, 6, 'prepare ok, waiting for begin'), (1604800800, 5, 'activating state 2'), (1604800800, 11, 'wakeup and zap'), (1604800860, 5, 'activating state 3'), (1604800860, 12, 'stop recording'), (1604800860, 15, 'record time changed, start prepare is now: Mon Nov  9 02:59:40 2020'), (1604887180, 5, 'activating state 1'), (1604887180, 6, 'prepare ok, waiting for begin'), (1604887200, 5, 'activating state 2'), (1604887200, 11, 'wakeup and zap'), (1604887260, 5, 'activating state 3'), (1604887260, 12, 'stop recording'), (1604887260, 15, 'record time changed, start prepare is now: Tue Nov 10 02:59:40 2020'), (1604973580, 5, 'activating state 1'), (1604973580, 6, 'prepare ok, waiting for begin'), (1604973600, 5, 'activating state 2'), (1604973600, 11, 'wakeup and zap'), (1604973660, 5, 'activating state 3'), (1604973660, 12, 'stop recording'), (1604973660, 15, 'record time changed, start prepare is now: Wed Nov 11 02:59:40 2020'), (1605059980, 5, 'activating state 1'), (1605059980, 6, 'prepare ok, waiting for begin'), (1605060000, 5, 'activating state 2'), (1605060000, 11, 'wakeup and zap'), (1605060060, 5, 'activating state 3'), (1605060060, 12, 'stop recording'), (1605060060, 15, 'record time changed, start prepare is now: Thu Nov 12 02:59:40 2020'), (1605146380, 5, 'activating state 1'), (1605146380, 6, 'prepare ok, waiting for begin'), (1605146400, 5, 'activating state 2'), (1605146400, 11, 'wakeup and zap'), (1605146461, 5, 'activating state 3'), (1605146461, 12, 'stop recording'), (1605146461, 15, 'record time changed, start prepare is now: Fri Nov 13 02:59:40 2020'), (1605232780, 5, 'activating state 1'), (1605232780, 6, 'prepare ok, waiting for begin'), (1605232800, 5, 'activating state 2'), (1605232800, 11, 'wakeup and zap'), (1605232860, 5, 'activating state 3'), (1605232860, 12, 'stop recording'), (1605232860, 15, 'record time changed, start prepare is now: Sat Nov 14 02:59:40 2020'), (1605319180, 5, 'activating state 1'), (1605319180, 6, 'prepare ok, waiting for begin'), (1605319200, 5, 'activating state 2'), (1605319200, 11, 'wakeup and zap'), (1605319260, 5, 'activating state 3'), (1605319260, 12, 'stop recording'), (1605319260, 15, 'record time changed, start prepare is now: Sun Nov 15 02:59:40 2020'), (1605405580, 5, 'activating state 1'), (1605405580, 6, 'prepare ok, waiting for begin'), (1605405600, 5, 'activating state 2'), (1605405600, 11, 'wakeup and zap'), (1605405660, 5, 'activating state 3'), (1605405660, 12, 'stop recording'), (1605405660, 15, 'record time changed, start prepare is now: Mon Nov 16 02:59:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605405600</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>127</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>25497</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(6:8/s5) Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended></e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605495300</e2timebegin>
+        <e2timeend>1605499500</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1605495280</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(1605430845, 15, 'record time changed, start prepare is now: Mon Nov 16 03:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:1:320:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Disney Channel</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Milo Murphys lov</e2name>
+        <e2description>(3:10) Fransk animasjonsserie fra 2019.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605504300</e2timebegin>
+        <e2timeend>1605505500</e2timeend>
+        <e2duration>1200</e2duration>
+        <e2startprepare>1605504280</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685320, 15, 'record time changed, start prepare is now: Mon Oct 26 06:24:40 2020'), (1603689880, 5, 'activating state 1'), (1603689880, 0, "Filename calculated as: '/media/hdd/movie/20201026 0625 - Disney Channel - Milo Murphys lov'"), (1603689880, 6, 'prepare ok, waiting for begin'), (1603689881, 16, 'record event 2'), (1603689881, 16, 'record event 6'), (1603689881, 16, 'record event 6'), (1603689881, 16, 'record event 9'), (1603689902, 5, 'activating state 2'), (1603689902, 11, 'start recording'), (1603689902, 16, 'record event 0'), (1603689902, 16, 'record event 4'), (1603690201, 16, 'record event 9'), (1603691100, 5, 'activating state 3'), (1603691100, 12, 'stop recording'), (1603691109, 16, 'record event 5'), (1603691109, 16, 'record event 1'), (1603691109, 15, 'record time changed, start prepare is now: Tue Oct 27 06:24:40 2020'), (1603776280, 5, 'activating state 1'), (1603776280, 0, "Filename calculated as: '/media/hdd/movie/20201027 0625 - Disney Channel - Milo Murphys lov'"), (1603776280, 6, 'prepare ok, waiting for begin'), (1603776280, 16, 'record event 2'), (1603776280, 16, 'record event 6'), (1603776280, 16, 'record event 6'), (1603776280, 16, 'record event 9'), (1603776300, 5, 'activating state 2'), (1603776300, 11, 'start recording'), (1603776300, 16, 'record event 0'), (1603776300, 16, 'record event 4'), (1603776599, 16, 'record event 9'), (1603777499, 16, 'record event 9'), (1603777500, 5, 'activating state 3'), (1603777500, 12, 'stop recording'), (1603777505, 16, 'record event 5'), (1603777505, 16, 'record event 1'), (1603777505, 15, 'record time changed, start prepare is now: Wed Oct 28 06:24:40 2020'), (1603862680, 5, 'activating state 1'), (1603862699, 0, "Filename calculated as: '/media/hdd/movie/20201028 0625 - Disney Channel - Milo Murphys lov'"), (1603862700, 6, 'prepare ok, waiting for begin'), (1603862700, 5, 'activating state 2'), (1603862700, 11, 'start recording'), (1603862700, 16, 'record event 0'), (1603862700, 16, 'record event 2'), (1603862700, 16, 'record event 4'), (1603862700, 16, 'record event 6'), (1603862700, 16, 'record event 4'), (1603862700, 16, 'record event 6'), (1603862700, 16, 'record event 9'), (1603863000, 16, 'record event 9'), (1603863899, 16, 'record event 9'), (1603863900, 5, 'activating state 3'), (1603863900, 12, 'stop recording'), (1603863904, 16, 'record event 5'), (1603863904, 16, 'record event 1'), (1603863905, 15, 'record time changed, start prepare is now: Thu Oct 29 06:24:40 2020'), (1603949080, 5, 'activating state 1'), (1603949099, 0, "Filename calculated as: '/media/hdd/movie/20201029 0625 - Disney Channel - Milo Murphys lov'"), (1603949100, 6, 'prepare ok, waiting for begin'), (1603949100, 5, 'activating state 2'), (1603949100, 11, 'start recording'), (1603949100, 16, 'record event 0'), (1603949100, 16, 'record event 2'), (1603949100, 16, 'record event 4'), (1603949100, 16, 'record event 6'), (1603949100, 16, 'record event 4'), (1603949100, 16, 'record event 6'), (1603949101, 16, 'record event 9'), (1603949400, 16, 'record event 9'), (1603950300, 5, 'activating state 3'), (1603950300, 12, 'stop recording'), (1603950305, 16, 'record event 5'), (1603950305, 16, 'record event 1'), (1603950305, 15, 'record time changed, start prepare is now: Fri Oct 30 06:24:40 2020'), (1604035480, 5, 'activating state 1'), (1604035499, 0, "Filename calculated as: '/media/hdd/movie/20201030 0625 - Disney Channel - Milo Murphys lov'"), (1604035500, 6, 'prepare ok, waiting for begin'), (1604035500, 5, 'activating state 2'), (1604035500, 11, 'start recording'), (1604035500, 16, 'record event 0'), (1604035500, 16, 'record event 2'), (1604035500, 16, 'record event 4'), (1604035500, 16, 'record event 6'), (1604035501, 16, 'record event 4'), (1604035501, 16, 'record event 6'), (1604035501, 16, 'record event 9'), (1604035800, 16, 'record event 9'), (1604036700, 5, 'activating state 3'), (1604036700, 12, 'stop recording'), (1604036705, 16, 'record event 5'), (1604036705, 16, 'record event 1'), (1604036705, 15, 'record time changed, start prepare is now: Mon Nov  2 06:24:40 2020'), (1604294680, 5, 'activating state 1'), (1604294680, 0, "Filename calculated as: '/media/hdd/movie/20201102 0625 - Disney Channel - Milo Murphys lov'"), (1604294681, 6, 'prepare ok, waiting for begin'), (1604294681, 16, 'record event 2'), (1604294681, 16, 'record event 6'), (1604294681, 16, 'record event 6'), (1604294681, 16, 'record event 9'), (1604294700, 5, 'activating state 2'), (1604294700, 11, 'start recording'), (1604294700, 16, 'record event 0'), (1604294700, 16, 'record event 4'), (1604294999, 16, 'record event 9'), (1604295899, 16, 'record event 9'), (1604295900, 5, 'activating state 3'), (1604295900, 12, 'stop recording'), (1604295905, 16, 'record event 5'), (1604295905, 16, 'record event 1'), (1604295905, 15, 'record time changed, start prepare is now: Tue Nov  3 06:24:40 2020'), (1604381080, 5, 'activating state 1'), (1604381080, 0, "Filename calculated as: '/media/hdd/movie/20201103 0625 - Disney Channel - Milo Murphys lov'"), (1604381081, 6, 'prepare ok, waiting for begin'), (1604381081, 16, 'record event 2'), (1604381081, 16, 'record event 6'), (1604381081, 16, 'record event 6'), (1604381082, 16, 'record event 9'), (1604381100, 5, 'activating state 2'), (1604381100, 11, 'start recording'), (1604381100, 16, 'record event 0'), (1604381100, 16, 'record event 4'), (1604381399, 16, 'record event 9'), (1604382300, 5, 'activating state 3'), (1604382300, 12, 'stop recording'), (1604382305, 16, 'record event 5'), (1604382305, 16, 'record event 1'), (1604382305, 15, 'record time changed, start prepare is now: Wed Nov  4 06:24:40 2020'), (1604467480, 5, 'activating state 1'), (1604467480, 0, "Filename calculated as: '/media/hdd/movie/20201104 0625 - Disney Channel - Milo Murphys lov'"), (1604467481, 6, 'prepare ok, waiting for begin'), (1604467481, 16, 'record event 2'), (1604467481, 16, 'record event 6'), (1604467481, 16, 'record event 6'), (1604467481, 16, 'record event 9'), (1604467500, 5, 'activating state 2'), (1604467500, 11, 'start recording'), (1604467500, 16, 'record event 0'), (1604467500, 16, 'record event 4'), (1604467800, 16, 'record event 9'), (1604468700, 5, 'activating state 3'), (1604468700, 12, 'stop recording'), (1604468704, 16, 'record event 5'), (1604468704, 16, 'record event 1'), (1604468704, 15, 'record time changed, start prepare is now: Thu Nov  5 06:24:40 2020'), (1604553880, 5, 'activating state 1'), (1604553880, 0, "Filename calculated as: '/media/hdd/movie/20201105 0625 - Disney Channel - Milo Murphys lov'"), (1604553881, 6, 'prepare ok, waiting for begin'), (1604553881, 16, 'record event 2'), (1604553881, 16, 'record event 6'), (1604553880, 16, 'record event 6'), (1604553880, 16, 'record event 9'), (1604553900, 5, 'activating state 2'), (1604553900, 11, 'start recording'), (1604553900, 16, 'record event 0'), (1604553900, 16, 'record event 4'), (1604554201, 16, 'record event 9'), (1604555100, 5, 'activating state 3'), (1604555100, 12, 'stop recording'), (1604555104, 16, 'record event 5'), (1604555105, 16, 'record event 1'), (1604555105, 15, 'record time changed, start prepare is now: Fri Nov  6 06:24:40 2020'), (1604640280, 5, 'activating state 1'), (1604640280, 0, "Filename calculated as: '/media/hdd/movie/20201106 0625 - Disney Channel - Milo Murphys lov'"), (1604640280, 6, 'prepare ok, waiting for begin'), (1604640280, 16, 'record event 2'), (1604640280, 16, 'record event 6'), (1604640280, 16, 'record event 6'), (1604640282, 16, 'record event 9'), (1604640301, 5, 'activating state 2'), (1604640301, 11, 'start recording'), (1604640301, 16, 'record event 0'), (1604640301, 16, 'record event 4'), (1604640600, 16, 'record event 9'), (1604641499, 16, 'record event 9'), (1604641500, 5, 'activating state 3'), (1604641500, 12, 'stop recording'), (1604641504, 16, 'record event 5'), (1604641504, 16, 'record event 1'), (1604641504, 15, 'record time changed, start prepare is now: Mon Nov  9 06:24:40 2020'), (1604899480, 5, 'activating state 1'), (1604899480, 0, "Filename calculated as: '/media/hdd/movie/20201109 0625 - Disney Channel - Milo Murphys lov'"), (1604899480, 6, 'prepare ok, waiting for begin'), (1604899480, 16, 'record event 2'), (1604899480, 16, 'record event 6'), (1604899482, 16, 'record event 6'), (1604899482, 16, 'record event 9'), (1604899501, 5, 'activating state 2'), (1604899501, 11, 'start recording'), (1604899501, 16, 'record event 0'), (1604899501, 16, 'record event 4'), (1604899801, 16, 'record event 9'), (1604900700, 5, 'activating state 3'), (1604900700, 12, 'stop recording'), (1604900704, 16, 'record event 5'), (1604900704, 16, 'record event 1'), (1604900704, 15, 'record time changed, start prepare is now: Tue Nov 10 06:24:40 2020'), (1604985880, 5, 'activating state 1'), (1604985880, 0, "Filename calculated as: '/media/hdd/movie/20201110 0625 - Disney Channel - Milo Murphys lov'"), (1604985880, 6, 'prepare ok, waiting for begin'), (1604985880, 16, 'record event 2'), (1604985880, 16, 'record event 6'), (1604985881, 16, 'record event 6'), (1604985882, 16, 'record event 9'), (1604985901, 5, 'activating state 2'), (1604985901, 11, 'start recording'), (1604985901, 16, 'record event 0'), (1604985901, 16, 'record event 4'), (1604986200, 16, 'record event 9'), (1604987100, 5, 'activating state 3'), (1604987100, 12, 'stop recording'), (1604987105, 16, 'record event 5'), (1604987105, 16, 'record event 1'), (1604987105, 15, 'record time changed, start prepare is now: Wed Nov 11 06:24:40 2020'), (1605072280, 5, 'activating state 1'), (1605072280, 0, "Filename calculated as: '/media/hdd/movie/20201111 0625 - Disney Channel - Milo Murphys lov'"), (1605072280, 6, 'prepare ok, waiting for begin'), (1605072280, 16, 'record event 2'), (1605072280, 16, 'record event 6'), (1605072281, 16, 'record event 6'), (1605072281, 16, 'record event 9'), (1605072301, 5, 'activating state 2'), (1605072301, 11, 'start recording'), (1605072301, 16, 'record event 0'), (1605072301, 16, 'record event 4'), (1605072601, 16, 'record event 9'), (1605073500, 5, 'activating state 3'), (1605073500, 12, 'stop recording'), (1605073505, 16, 'record event 5'), (1605073505, 16, 'record event 1'), (1605073505, 15, 'record time changed, start prepare is now: Thu Nov 12 06:24:40 2020'), (1605158680, 5, 'activating state 1'), (1605158680, 0, "Filename calculated as: '/media/hdd/movie/20201112 0625 - Disney Channel - Milo Murphys lov'"), (1605158680, 6, 'prepare ok, waiting for begin'), (1605158680, 16, 'record event 2'), (1605158680, 16, 'record event 6'), (1605158680, 16, 'record event 6'), (1605158681, 16, 'record event 9'), (1605158700, 5, 'activating state 2'), (1605158700, 11, 'start recording'), (1605158700, 16, 'record event 0'), (1605158700, 16, 'record event 4'), (1605159000, 16, 'record event 9'), (1605159900, 5, 'activating state 3'), (1605159900, 12, 'stop recording'), (1605159904, 16, 'record event 5'), (1605159904, 16, 'record event 1'), (1605159904, 15, 'record time changed, start prepare is now: Fri Nov 13 06:24:40 2020'), (1605245080, 5, 'activating state 1'), (1605245080, 0, "Filename calculated as: '/media/hdd/movie/20201113 0625 - Disney Channel - Milo Murphys lov'"), (1605245080, 6, 'prepare ok, waiting for begin'), (1605245080, 16, 'record event 2'), (1605245080, 16, 'record event 6'), (1605245083, 16, 'record event 6'), (1605245083, 16, 'record event 9'), (1605245102, 5, 'activating state 2'), (1605245102, 11, 'start recording'), (1605245102, 16, 'record event 0'), (1605245102, 16, 'record event 4'), (1605245400, 16, 'record event 9'), (1605246300, 5, 'activating state 3'), (1605246300, 12, 'stop recording'), (1605246305, 16, 'record event 5'), (1605246305, 16, 'record event 1'), (1605246305, 15, 'record time changed, start prepare is now: Mon Nov 16 06:24:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201113 0625 - Disney Channel - Milo Murphys lov</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605245100</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>31</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:1:31E:D:46:FFFF0192:0:0:0:</e2servicereference>
+        <e2servicename>Disney XD (N)</e2servicename>
+        <e2eit>24053</e2eit>
+        <e2name>Phineas og Ferb x4</e2name>
+        <e2description>(1) Amerikansk animasjonsserie fra 2018.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605513300</e2timebegin>
+        <e2timeend>1605521100</e2timeend>
+        <e2duration>7800</e2duration>
+        <e2startprepare>1605513280</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685320, 15, 'record time changed, start prepare is now: Mon Oct 26 08:54:40 2020'), (1603698880, 5, 'activating state 1'), (1603698880, 0, "Filename calculated as: '/media/hdd/movie/20201026 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1603698881, 6, 'prepare ok, waiting for begin'), (1603698881, 16, 'record event 2'), (1603698881, 16, 'record event 6'), (1603698882, 16, 'record event 6'), (1603698881, 16, 'record event 9'), (1603698900, 5, 'activating state 2'), (1603698900, 11, 'start recording'), (1603698900, 16, 'record event 0'), (1603698900, 16, 'record event 4'), (1603699200, 16, 'record event 9'), (1603700700, 16, 'record event 9'), (1603702801, 16, 'record event 9'), (1603704299, 16, 'record event 9'), (1603706400, 16, 'record event 9'), (1603706700, 5, 'activating state 3'), (1603706700, 12, 'stop recording'), (1603706742, 16, 'record event 5'), (1603706742, 16, 'record event 1'), (1603706742, 15, 'record time changed, start prepare is now: Tue Oct 27 08:54:40 2020'), (1603785280, 5, 'activating state 1'), (1603785280, 0, "Filename calculated as: '/media/hdd/movie/20201027 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1603785300, 6, 'prepare ok, waiting for begin'), (1603785300, 5, 'activating state 2'), (1603785300, 11, 'start recording'), (1603785300, 16, 'record event 0'), (1603785300, 16, 'record event 2'), (1603785300, 16, 'record event 4'), (1603785300, 16, 'record event 6'), (1603785301, 16, 'record event 4'), (1603785301, 16, 'record event 6'), (1603785302, 16, 'record event 9'), (1603785601, 16, 'record event 9'), (1603787100, 16, 'record event 9'), (1603789201, 16, 'record event 9'), (1603790699, 16, 'record event 9'), (1603792800, 16, 'record event 9'), (1603793100, 5, 'activating state 3'), (1603793100, 12, 'stop recording'), (1603793101, 16, 'record event 5'), (1603793101, 16, 'record event 1'), (1603793101, 15, 'record time changed, start prepare is now: Wed Oct 28 08:54:40 2020'), (1603871680, 5, 'activating state 1'), (1603871680, 0, "Filename calculated as: '/media/hdd/movie/20201028 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1603871700, 6, 'prepare ok, waiting for begin'), (1603871700, 5, 'activating state 2'), (1603871700, 11, 'start recording'), (1603871700, 16, 'record event 0'), (1603871700, 16, 'record event 2'), (1603871700, 16, 'record event 4'), (1603871700, 16, 'record event 6'), (1603871701, 16, 'record event 4'), (1603871701, 16, 'record event 6'), (1603871702, 16, 'record event 9'), (1603872001, 16, 'record event 9'), (1603873500, 16, 'record event 9'), (1603875600, 16, 'record event 9'), (1603877099, 16, 'record event 9'), (1603879200, 16, 'record event 9'), (1603879500, 5, 'activating state 3'), (1603879500, 12, 'stop recording'), (1603879501, 16, 'record event 5'), (1603879501, 16, 'record event 1'), (1603879501, 15, 'record time changed, start prepare is now: Thu Oct 29 08:54:40 2020'), (1603958080, 5, 'activating state 1'), (1603958080, 0, "Filename calculated as: '/media/hdd/movie/20201029 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1603958091, 6, 'prepare ok, waiting for begin'), (1603958091, 16, 'record event 2'), (1603958091, 16, 'record event 6'), (1603958092, 16, 'record event 6'), (1603958091, 16, 'record event 9'), (1603958100, 5, 'activating state 2'), (1603958100, 11, 'start recording'), (1603958100, 16, 'record event 0'), (1603958100, 16, 'record event 4'), (1603958400, 16, 'record event 9'), (1603959901, 16, 'record event 9'), (1603961999, 16, 'record event 9'), (1603963499, 16, 'record event 9'), (1603965600, 16, 'record event 9'), (1603965900, 5, 'activating state 3'), (1603965900, 12, 'stop recording'), (1603965904, 16, 'record event 5'), (1603965904, 16, 'record event 1'), (1603965904, 15, 'record time changed, start prepare is now: Fri Oct 30 08:54:40 2020'), (1604044480, 5, 'activating state 1'), (1604044480, 0, "Filename calculated as: '/media/hdd/movie/20201030 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604044500, 6, 'prepare ok, waiting for begin'), (1604044500, 5, 'activating state 2'), (1604044500, 11, 'start recording'), (1604044500, 16, 'record event 0'), (1604044500, 16, 'record event 2'), (1604044500, 16, 'record event 4'), (1604044500, 16, 'record event 6'), (1604044500, 16, 'record event 4'), (1604044500, 16, 'record event 6'), (1604044501, 16, 'record event 9'), (1604044801, 16, 'record event 9'), (1604046301, 16, 'record event 9'), (1604048400, 16, 'record event 9'), (1604049900, 16, 'record event 9'), (1604052001, 16, 'record event 9'), (1604052300, 5, 'activating state 3'), (1604052300, 12, 'stop recording'), (1604052307, 16, 'record event 5'), (1604052307, 16, 'record event 1'), (1604052308, 15, 'record time changed, start prepare is now: Mon Nov  2 08:54:40 2020'), (1604303680, 5, 'activating state 1'), (1604303680, 0, "Filename calculated as: '/media/hdd/movie/20201102 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604303681, 6, 'prepare ok, waiting for begin'), (1604303681, 16, 'record event 2'), (1604303681, 16, 'record event 6'), (1604303681, 16, 'record event 6'), (1604303681, 16, 'record event 9'), (1604303700, 5, 'activating state 2'), (1604303700, 11, 'start recording'), (1604303700, 16, 'record event 0'), (1604303700, 16, 'record event 4'), (1604304000, 16, 'record event 9'), (1604305738, 16, 'record event 9'), (1604307601, 16, 'record event 9'), (1604309340, 16, 'record event 9'), (1604311200, 16, 'record event 9'), (1604311500, 5, 'activating state 3'), (1604311500, 12, 'stop recording'), (1604311501, 16, 'record event 5'), (1604311501, 16, 'record event 1'), (1604311501, 15, 'record time changed, start prepare is now: Tue Nov  3 08:54:40 2020'), (1604390080, 5, 'activating state 1'), (1604390098, 0, "Filename calculated as: '/media/hdd/movie/20201103 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604390098, 6, 'prepare ok, waiting for begin'), (1604390099, 16, 'record event 2'), (1604390099, 16, 'record event 6'), (1604390099, 16, 'record event 6'), (1604390099, 16, 'record event 9'), (1604390100, 5, 'activating state 2'), (1604390100, 11, 'start recording'), (1604390100, 16, 'record event 0'), (1604390100, 16, 'record event 4'), (1604390400, 16, 'record event 9'), (1604392139, 16, 'record event 9'), (1604394000, 16, 'record event 9'), (1604395739, 16, 'record event 9'), (1604397600, 16, 'record event 9'), (1604397900, 5, 'activating state 3'), (1604397900, 12, 'stop recording'), (1604397901, 16, 'record event 5'), (1604397901, 16, 'record event 1'), (1604397901, 15, 'record time changed, start prepare is now: Wed Nov  4 08:54:40 2020'), (1604476480, 5, 'activating state 1'), (1604476480, 0, "Filename calculated as: '/media/hdd/movie/20201104 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604476481, 6, 'prepare ok, waiting for begin'), (1604476481, 16, 'record event 2'), (1604476481, 16, 'record event 6'), (1604476481, 16, 'record event 6'), (1604476481, 16, 'record event 9'), (1604476500, 5, 'activating state 2'), (1604476500, 11, 'start recording'), (1604476500, 16, 'record event 0'), (1604476500, 16, 'record event 4'), (1604476803, 16, 'record event 9'), (1604478539, 16, 'record event 9'), (1604480401, 16, 'record event 9'), (1604482140, 16, 'record event 9'), (1604484002, 16, 'record event 9'), (1604484300, 5, 'activating state 3'), (1604484300, 12, 'stop recording'), (1604484301, 16, 'record event 5'), (1604484301, 16, 'record event 1'), (1604484301, 15, 'record time changed, start prepare is now: Thu Nov  5 08:54:40 2020'), (1604562880, 5, 'activating state 1'), (1604562880, 0, "Filename calculated as: '/media/hdd/movie/20201105 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604562880, 6, 'prepare ok, waiting for begin'), (1604562880, 16, 'record event 2'), (1604562880, 16, 'record event 6'), (1604562880, 16, 'record event 6'), (1604562881, 16, 'record event 9'), (1604562900, 5, 'activating state 2'), (1604562900, 11, 'start recording'), (1604562900, 16, 'record event 0'), (1604562900, 16, 'record event 4'), (1604563201, 16, 'record event 9'), (1604564939, 16, 'record event 9'), (1604566801, 16, 'record event 9'), (1604568539, 16, 'record event 9'), (1604570401, 16, 'record event 9'), (1604570700, 5, 'activating state 3'), (1604570700, 12, 'stop recording'), (1604570701, 16, 'record event 5'), (1604570701, 16, 'record event 1'), (1604570701, 15, 'record time changed, start prepare is now: Fri Nov  6 08:54:40 2020'), (1604649280, 5, 'activating state 1'), (1604649280, 0, "Filename calculated as: '/media/hdd/movie/20201106 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604649281, 6, 'prepare ok, waiting for begin'), (1604649281, 16, 'record event 2'), (1604649281, 16, 'record event 6'), (1604649282, 16, 'record event 6'), (1604649282, 16, 'record event 9'), (1604649301, 5, 'activating state 2'), (1604649301, 11, 'start recording'), (1604649301, 16, 'record event 0'), (1604649301, 16, 'record event 4'), (1604649601, 16, 'record event 9'), (1604651339, 16, 'record event 9'), (1604653199, 16, 'record event 9'), (1604654940, 16, 'record event 9'), (1604656801, 16, 'record event 9'), (1604657100, 5, 'activating state 3'), (1604657100, 12, 'stop recording'), (1604657101, 16, 'record event 5'), (1604657101, 16, 'record event 1'), (1604657101, 15, 'record time changed, start prepare is now: Mon Nov  9 08:54:40 2020'), (1604908480, 5, 'activating state 1'), (1604908480, 0, "Filename calculated as: '/media/hdd/movie/20201109 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604908480, 6, 'prepare ok, waiting for begin'), (1604908480, 16, 'record event 2'), (1604908480, 16, 'record event 6'), (1604908481, 16, 'record event 6'), (1604908481, 16, 'record event 9'), (1604908500, 5, 'activating state 2'), (1604908500, 11, 'start recording'), (1604908500, 16, 'record event 0'), (1604908500, 16, 'record event 4'), (1604908801, 16, 'record event 9'), (1604910540, 16, 'record event 9'), (1604912400, 16, 'record event 9'), (1604914139, 16, 'record event 9'), (1604916000, 16, 'record event 9'), (1604916300, 5, 'activating state 3'), (1604916300, 12, 'stop recording'), (1604916302, 16, 'record event 5'), (1604916302, 16, 'record event 1'), (1604916302, 15, 'record time changed, start prepare is now: Tue Nov 10 08:54:40 2020'), (1604994880, 5, 'activating state 1'), (1604994880, 0, "Filename calculated as: '/media/hdd/movie/20201110 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1604994880, 6, 'prepare ok, waiting for begin'), (1604994880, 16, 'record event 2'), (1604994880, 16, 'record event 6'), (1604994881, 16, 'record event 6'), (1604994881, 16, 'record event 9'), (1604994900, 5, 'activating state 2'), (1604994900, 11, 'start recording'), (1604994900, 16, 'record event 0'), (1604994900, 16, 'record event 4'), (1604995201, 16, 'record event 9'), (1604996940, 16, 'record event 9'), (1604998801, 16, 'record event 9'), (1605000539, 16, 'record event 9'), (1605002401, 16, 'record event 9'), (1605002700, 5, 'activating state 3'), (1605002700, 12, 'stop recording'), (1605002706, 16, 'record event 5'), (1605002706, 16, 'record event 1'), (1605002706, 15, 'record time changed, start prepare is now: Wed Nov 11 08:54:40 2020'), (1605081280, 5, 'activating state 1'), (1605081280, 0, "Filename calculated as: '/media/hdd/movie/20201111 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1605081280, 6, 'prepare ok, waiting for begin'), (1605081280, 16, 'record event 2'), (1605081280, 16, 'record event 6'), (1605081280, 16, 'record event 6'), (1605081281, 16, 'record event 9'), (1605081300, 5, 'activating state 2'), (1605081300, 11, 'start recording'), (1605081300, 16, 'record event 0'), (1605081300, 16, 'record event 4'), (1605081602, 16, 'record event 9'), (1605083338, 16, 'record event 9'), (1605085200, 16, 'record event 9'), (1605086939, 16, 'record event 9'), (1605088800, 16, 'record event 9'), (1605089100, 5, 'activating state 3'), (1605089100, 12, 'stop recording'), (1605089111, 16, 'record event 5'), (1605089111, 16, 'record event 1'), (1605089111, 15, 'record time changed, start prepare is now: Thu Nov 12 08:54:40 2020'), (1605167680, 5, 'activating state 1'), (1605167680, 0, "Filename calculated as: '/media/hdd/movie/20201112 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1605167680, 6, 'prepare ok, waiting for begin'), (1605167680, 16, 'record event 2'), (1605167680, 16, 'record event 6'), (1605167680, 16, 'record event 6'), (1605167681, 16, 'record event 9'), (1605167700, 5, 'activating state 2'), (1605167700, 11, 'start recording'), (1605167700, 16, 'record event 0'), (1605167700, 16, 'record event 4'), (1605168001, 16, 'record event 9'), (1605169739, 16, 'record event 9'), (1605171601, 16, 'record event 9'), (1605173340, 16, 'record event 9'), (1605175200, 16, 'record event 9'), (1605175500, 5, 'activating state 3'), (1605175500, 12, 'stop recording'), (1605175511, 16, 'record event 5'), (1605175511, 16, 'record event 1'), (1605175511, 15, 'record time changed, start prepare is now: Fri Nov 13 08:54:40 2020'), (1605254080, 5, 'activating state 1'), (1605254080, 0, "Filename calculated as: '/media/hdd/movie/20201113 0855 - Disney XD (N) - Phineas og Ferb x4'"), (1605254080, 6, 'prepare ok, waiting for begin'), (1605254080, 16, 'record event 2'), (1605254080, 16, 'record event 6'), (1605254080, 16, 'record event 6'), (1605254080, 16, 'record event 9'), (1605254100, 5, 'activating state 2'), (1605254100, 11, 'start recording'), (1605254100, 16, 'record event 0'), (1605254100, 16, 'record event 4'), (1605254400, 16, 'record event 9'), (1605256140, 16, 'record event 9'), (1605258001, 16, 'record event 9'), (1605259739, 16, 'record event 9'), (1605261601, 16, 'record event 9'), (1605261900, 5, 'activating state 3'), (1605261900, 12, 'stop recording'), (1605261911, 16, 'record event 5'), (1605261911, 16, 'record event 1'), (1605261911, 15, 'record time changed, start prepare is now: Mon Nov 16 08:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201113 0855 - Disney XD (N) - Phineas og Ferb x4</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605254100</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>31</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Flyhavarikommisjonen</e2name>
+        <e2description>(4:10/s4) Kanadisk dokumentarserie fra 2006.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605524100</e2timebegin>
+        <e2timeend>1605528000</e2timeend>
+        <e2duration>3900</e2duration>
+        <e2startprepare>1605524080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685321, 15, 'record time changed, start prepare is now: Mon Oct 26 11:54:40 2020'), (1603709680, 5, 'activating state 1'), (1603709680, 0, "Filename calculated as: '/media/hdd/movie/20201026 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1603709680, 6, 'prepare ok, waiting for begin'), (1603709681, 16, 'record event 2'), (1603709681, 16, 'record event 6'), (1603709681, 16, 'record event 6'), (1603709681, 16, 'record event 9'), (1603709700, 5, 'activating state 2'), (1603709700, 11, 'start recording'), (1603709700, 16, 'record event 0'), (1603709700, 16, 'record event 4'), (1603710000, 16, 'record event 9'), (1603713599, 16, 'record event 9'), (1603713600, 5, 'activating state 3'), (1603713600, 12, 'stop recording'), (1603713625, 16, 'record event 5'), (1603713626, 16, 'record event 1'), (1603713626, 15, 'record time changed, start prepare is now: Tue Oct 27 11:54:40 2020'), (1603796080, 5, 'activating state 1'), (1603796080, 0, "Filename calculated as: '/media/hdd/movie/20201027 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1603796080, 6, 'prepare ok, waiting for begin'), (1603796081, 16, 'record event 2'), (1603796081, 16, 'record event 6'), (1603796081, 16, 'record event 6'), (1603796081, 16, 'record event 9'), (1603796100, 5, 'activating state 2'), (1603796100, 11, 'start recording'), (1603796100, 16, 'record event 0'), (1603796100, 16, 'record event 4'), (1603796401, 16, 'record event 9'), (1603800000, 5, 'activating state 3'), (1603800000, 12, 'stop recording'), (1603800006, 16, 'record event 5'), (1603800006, 16, 'record event 1'), (1603800006, 15, 'record time changed, start prepare is now: Wed Oct 28 11:54:40 2020'), (1603882480, 5, 'activating state 1'), (1603882480, 0, "Filename calculated as: '/media/hdd/movie/20201028 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1603882500, 6, 'prepare ok, waiting for begin'), (1603882500, 5, 'activating state 2'), (1603882500, 11, 'start recording'), (1603882500, 16, 'record event 0'), (1603882500, 16, 'record event 2'), (1603882500, 16, 'record event 4'), (1603882500, 16, 'record event 6'), (1603882500, 16, 'record event 4'), (1603882500, 16, 'record event 6'), (1603882501, 16, 'record event 9'), (1603882802, 16, 'record event 9'), (1603886400, 5, 'activating state 3'), (1603886400, 12, 'stop recording'), (1603886406, 16, 'record event 5'), (1603886406, 16, 'record event 1'), (1603886406, 15, 'record time changed, start prepare is now: Thu Oct 29 11:54:40 2020'), (1603968880, 5, 'activating state 1'), (1603968880, 0, "Filename calculated as: '/media/hdd/movie/20201029 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1603968900, 6, 'prepare ok, waiting for begin'), (1603968900, 5, 'activating state 2'), (1603968900, 11, 'start recording'), (1603968900, 16, 'record event 0'), (1603968900, 16, 'record event 2'), (1603968900, 16, 'record event 4'), (1603968900, 16, 'record event 6'), (1603968900, 16, 'record event 4'), (1603968900, 16, 'record event 6'), (1603968901, 16, 'record event 9'), (1603969200, 16, 'record event 9'), (1603972800, 5, 'activating state 3'), (1603972800, 12, 'stop recording'), (1603972806, 16, 'record event 5'), (1603972806, 16, 'record event 1'), (1603972806, 15, 'record time changed, start prepare is now: Fri Oct 30 11:54:40 2020'), (1604055280, 5, 'activating state 1'), (1604055280, 0, "Filename calculated as: '/media/hdd/movie/20201030 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604055300, 6, 'prepare ok, waiting for begin'), (1604055300, 5, 'activating state 2'), (1604055300, 11, 'start recording'), (1604055300, 16, 'record event 0'), (1604055300, 16, 'record event 2'), (1604055300, 16, 'record event 4'), (1604055300, 16, 'record event 6'), (1604055301, 16, 'record event 9'), (1604055301, 16, 'record event 4'), (1604055301, 16, 'record event 6'), (1604055601, 16, 'record event 9'), (1604059200, 5, 'activating state 3'), (1604059200, 12, 'stop recording'), (1604059206, 16, 'record event 5'), (1604059206, 16, 'record event 1'), (1604059206, 15, 'record time changed, start prepare is now: Mon Nov  2 11:54:40 2020'), (1604314480, 5, 'activating state 1'), (1604314480, 0, "Filename calculated as: '/media/hdd/movie/20201102 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604314481, 6, 'prepare ok, waiting for begin'), (1604314481, 16, 'record event 2'), (1604314481, 16, 'record event 6'), (1604314481, 16, 'record event 6'), (1604314481, 16, 'record event 9'), (1604314500, 5, 'activating state 2'), (1604314500, 11, 'start recording'), (1604314500, 16, 'record event 0'), (1604314500, 16, 'record event 4'), (1604314801, 16, 'record event 9'), (1604318400, 5, 'activating state 3'), (1604318400, 12, 'stop recording'), (1604318407, 16, 'record event 5'), (1604318407, 16, 'record event 1'), (1604318407, 15, 'record time changed, start prepare is now: Tue Nov  3 11:54:40 2020'), (1604400880, 5, 'activating state 1'), (1604400880, 0, "Filename calculated as: '/media/hdd/movie/20201103 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604400880, 6, 'prepare ok, waiting for begin'), (1604400880, 16, 'record event 2'), (1604400880, 16, 'record event 6'), (1604400880, 16, 'record event 6'), (1604400881, 16, 'record event 9'), (1604400900, 5, 'activating state 2'), (1604400900, 11, 'start recording'), (1604400900, 16, 'record event 0'), (1604400900, 16, 'record event 4'), (1604401200, 16, 'record event 9'), (1604404800, 5, 'activating state 3'), (1604404800, 12, 'stop recording'), (1604404807, 16, 'record event 5'), (1604404807, 16, 'record event 1'), (1604404807, 15, 'record time changed, start prepare is now: Wed Nov  4 11:54:40 2020'), (1604487280, 5, 'activating state 1'), (1604487280, 0, "Filename calculated as: '/media/hdd/movie/20201104 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604487281, 6, 'prepare ok, waiting for begin'), (1604487281, 16, 'record event 2'), (1604487281, 16, 'record event 6'), (1604487281, 16, 'record event 6'), (1604487281, 16, 'record event 9'), (1604487300, 5, 'activating state 2'), (1604487300, 11, 'start recording'), (1604487300, 16, 'record event 0'), (1604487300, 16, 'record event 4'), (1604487603, 16, 'record event 9'), (1604491201, 5, 'activating state 3'), (1604491201, 12, 'stop recording'), (1604491211, 16, 'record event 5'), (1604491211, 16, 'record event 1'), (1604491211, 15, 'record time changed, start prepare is now: Thu Nov  5 11:54:40 2020'), (1604573680, 5, 'activating state 1'), (1604573680, 0, "Filename calculated as: '/media/hdd/movie/20201105 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604573681, 6, 'prepare ok, waiting for begin'), (1604573681, 16, 'record event 2'), (1604573681, 16, 'record event 6'), (1604573681, 16, 'record event 6'), (1604573681, 16, 'record event 9'), (1604573700, 5, 'activating state 2'), (1604573700, 11, 'start recording'), (1604573700, 16, 'record event 0'), (1604573700, 16, 'record event 4'), (1604574002, 16, 'record event 9'), (1604576635, 16, 'record event 9'), (1604577600, 5, 'activating state 3'), (1604577600, 12, 'stop recording'), (1604577609, 16, 'record event 5'), (1604577609, 16, 'record event 1'), (1604577610, 15, 'record time changed, start prepare is now: Fri Nov  6 11:54:40 2020'), (1604660080, 5, 'activating state 1'), (1604660080, 0, "Filename calculated as: '/media/hdd/movie/20201106 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604660098, 6, 'prepare ok, waiting for begin'), (1604660099, 16, 'record event 2'), (1604660099, 16, 'record event 6'), (1604660099, 16, 'record event 6'), (1604660099, 16, 'record event 9'), (1604660100, 5, 'activating state 2'), (1604660100, 11, 'start recording'), (1604660100, 16, 'record event 0'), (1604660100, 16, 'record event 4'), (1604660401, 16, 'record event 9'), (1604664000, 5, 'activating state 3'), (1604664000, 12, 'stop recording'), (1604664009, 16, 'record event 5'), (1604664009, 16, 'record event 1'), (1604664009, 15, 'record time changed, start prepare is now: Mon Nov  9 11:54:40 2020'), (1604919280, 5, 'activating state 1'), (1604919280, 0, "Filename calculated as: '/media/hdd/movie/20201109 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604919280, 6, 'prepare ok, waiting for begin'), (1604919280, 16, 'record event 2'), (1604919280, 16, 'record event 6'), (1604919282, 16, 'record event 6'), (1604919282, 16, 'record event 9'), (1604919301, 5, 'activating state 2'), (1604919301, 11, 'start recording'), (1604919301, 16, 'record event 0'), (1604919301, 16, 'record event 4'), (1604919600, 16, 'record event 9'), (1604923200, 5, 'activating state 3'), (1604923200, 12, 'stop recording'), (1604923207, 16, 'record event 5'), (1604923207, 16, 'record event 1'), (1604923207, 15, 'record time changed, start prepare is now: Tue Nov 10 11:54:40 2020'), (1605005680, 5, 'activating state 1'), (1605005680, 0, "Filename calculated as: '/media/hdd/movie/20201110 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1605005680, 6, 'prepare ok, waiting for begin'), (1605005680, 16, 'record event 2'), (1605005680, 16, 'record event 6'), (1605005680, 16, 'record event 6'), (1605005680, 16, 'record event 9'), (1605005700, 5, 'activating state 2'), (1605005700, 11, 'start recording'), (1605005700, 16, 'record event 0'), (1605005700, 16, 'record event 4'), (1605006001, 16, 'record event 9'), (1605009600, 5, 'activating state 3'), (1605009600, 12, 'stop recording'), (1605009607, 16, 'record event 5'), (1605009607, 16, 'record event 1'), (1605009607, 15, 'record time changed, start prepare is now: Wed Nov 11 11:54:40 2020'), (1605092080, 5, 'activating state 1'), (1605092080, 0, "Filename calculated as: '/media/hdd/movie/20201111 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1605092080, 6, 'prepare ok, waiting for begin'), (1605092080, 16, 'record event 2'), (1605092080, 16, 'record event 6'), (1605092080, 16, 'record event 6'), (1605092081, 16, 'record event 9'), (1605092100, 5, 'activating state 2'), (1605092100, 11, 'start recording'), (1605092100, 16, 'record event 0'), (1605092100, 16, 'record event 4'), (1605092400, 16, 'record event 9'), (1605096000, 5, 'activating state 3'), (1605096000, 12, 'stop recording'), (1605096006, 16, 'record event 5'), (1605096006, 16, 'record event 1'), (1605096007, 15, 'record time changed, start prepare is now: Thu Nov 12 11:54:40 2020'), (1605178480, 5, 'activating state 1'), (1605178480, 0, "Filename calculated as: '/media/hdd/movie/20201112 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1605178480, 6, 'prepare ok, waiting for begin'), (1605178480, 16, 'record event 2'), (1605178480, 16, 'record event 6'), (1605178480, 16, 'record event 6'), (1605178480, 16, 'record event 9'), (1605178500, 5, 'activating state 2'), (1605178500, 11, 'start recording'), (1605178500, 16, 'record event 0'), (1605178500, 16, 'record event 4'), (1605178800, 16, 'record event 9'), (1605182400, 5, 'activating state 3'), (1605182400, 12, 'stop recording'), (1605182406, 16, 'record event 5'), (1605182406, 16, 'record event 1'), (1605182406, 15, 'record time changed, start prepare is now: Fri Nov 13 11:54:40 2020'), (1605264880, 5, 'activating state 1'), (1605264880, 0, "Filename calculated as: '/media/hdd/movie/20201113 1155 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1605264880, 6, 'prepare ok, waiting for begin'), (1605264880, 16, 'record event 2'), (1605264880, 16, 'record event 6'), (1605264879, 16, 'record event 6'), (1605264879, 16, 'record event 9'), (1605264900, 5, 'activating state 2'), (1605264900, 11, 'start recording'), (1605264900, 16, 'record event 0'), (1605264900, 16, 'record event 4'), (1605265199, 16, 'record event 9'), (1605268800, 5, 'activating state 3'), (1605268800, 12, 'stop recording'), (1605268806, 16, 'record event 5'), (1605268806, 16, 'record event 1'), (1605268807, 15, 'record time changed, start prepare is now: Mon Nov 16 11:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201113 1155 - Nat Geo HD (N) - Flyhavarikommisjonen</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605264900</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>31</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:2C4F:1:46:FFFF014A:0:0:0:</e2servicereference>
+        <e2servicename>MAX HD</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Grensevakten x2</e2name>
+        <e2description>(4:24) Australsk dokumentarserie fra 2004.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605537900</e2timebegin>
+        <e2timeend>1605542700</e2timeend>
+        <e2duration>4800</e2duration>
+        <e2startprepare>1605537880</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685321, 15, 'record time changed, start prepare is now: Mon Oct 26 15:44:40 2020'), (1603723480, 5, 'activating state 1'), (1603723480, 0, "Filename calculated as: '/media/hdd/movie/20201026 1545 - MAX HD - Grensevakten x2'"), (1603723480, 6, 'prepare ok, waiting for begin'), (1603723481, 16, 'record event 2'), (1603723481, 16, 'record event 6'), (1603723481, 16, 'record event 6'), (1603723481, 16, 'record event 9'), (1603723500, 5, 'activating state 2'), (1603723500, 11, 'start recording'), (1603723500, 16, 'record event 0'), (1603723502, 16, 'record event 4'), (1603724699, 16, 'record event 9'), (1603726801, 16, 'record event 9'), (1603728300, 5, 'activating state 3'), (1603728300, 12, 'stop recording'), (1603728333, 16, 'record event 5'), (1603728333, 16, 'record event 1'), (1603728334, 15, 'record time changed, start prepare is now: Mon Nov  2 15:44:40 2020'), (1604328280, 5, 'activating state 1'), (1604328280, 0, "Filename calculated as: '/media/hdd/movie/20201102 1545 - MAX HD - Grensevakten x2'"), (1604328281, 6, 'prepare ok, waiting for begin'), (1604328281, 16, 'record event 2'), (1604328281, 16, 'record event 6'), (1604328281, 16, 'record event 6'), (1604328282, 16, 'record event 9'), (1604328301, 5, 'activating state 2'), (1604328301, 11, 'start recording'), (1604328301, 16, 'record event 0'), (1604328301, 16, 'record event 4'), (1604329801, 16, 'record event 9'), (1604331599, 16, 'record event 9'), (1604333100, 5, 'activating state 3'), (1604333100, 12, 'stop recording'), (1604333110, 16, 'record event 5'), (1604333110, 16, 'record event 1'), (1604333110, 15, 'record time changed, start prepare is now: Mon Nov  9 15:44:40 2020'), (1604933080, 5, 'activating state 1'), (1604933080, 0, "Filename calculated as: '/media/hdd/movie/20201109 1545 - MAX HD - Grensevakten x2'"), (1604933080, 6, 'prepare ok, waiting for begin'), (1604933080, 16, 'record event 2'), (1604933080, 16, 'record event 6'), (1604933080, 16, 'record event 6'), (1604933081, 16, 'record event 9'), (1604933100, 5, 'activating state 2'), (1604933100, 11, 'start recording'), (1604933100, 16, 'record event 0'), (1604933100, 16, 'record event 4'), (1604934000, 16, 'record event 9'), (1604936099, 16, 'record event 9'), (1604937900, 5, 'activating state 3'), (1604937900, 12, 'stop recording'), (1604937910, 16, 'record event 5'), (1604937910, 16, 'record event 1'), (1604937910, 15, 'record time changed, start prepare is now: Mon Nov 16 15:44:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201109 1545 - MAX HD - Grensevakten x2</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1604933100</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>1</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:2C4F:1:46:FFFF014A:0:0:0:</e2servicereference>
+        <e2servicename>MAX HD</e2servicename>
+        <e2eit>37823</e2eit>
+        <e2name>Grensevakten (R)</e2name>
+        <e2description>(11:24) Australsk dokumentarserie fra 2004.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605799200</e2timebegin>
+        <e2timeend>1605801600</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1605799180</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685322, 15, 'record time changed, start prepare is now: Thu Oct 29 16:19:40 2020'), (1603984780, 5, 'activating state 1'), (1603984780, 0, "Filename calculated as: '/media/hdd/movie/20201029 1620 - MAX HD - Grensevakten (R)'"), (1603984780, 6, 'prepare ok, waiting for begin'), (1603984780, 16, 'record event 2'), (1603984780, 16, 'record event 6'), (1603984781, 16, 'record event 6'), (1603984781, 16, 'record event 9'), (1603984800, 5, 'activating state 2'), (1603984800, 11, 'start recording'), (1603984800, 16, 'record event 0'), (1603984800, 16, 'record event 4'), (1603985999, 16, 'record event 9'), (1603987200, 5, 'activating state 3'), (1603987200, 12, 'stop recording'), (1603987210, 16, 'record event 5'), (1603987210, 16, 'record event 1'), (1603987210, 15, 'record time changed, start prepare is now: Thu Nov  5 16:19:40 2020'), (1604589580, 5, 'activating state 1'), (1604589580, 0, "Filename calculated as: '/media/hdd/movie/20201105 1620 - MAX HD - Grensevakten (R)'"), (1604589581, 6, 'prepare ok, waiting for begin'), (1604589581, 16, 'record event 2'), (1604589581, 16, 'record event 6'), (1604589582, 16, 'record event 6'), (1604589582, 16, 'record event 9'), (1604589601, 5, 'activating state 2'), (1604589601, 11, 'start recording'), (1604589601, 16, 'record event 0'), (1604589601, 16, 'record event 4'), (1604590802, 16, 'record event 9'), (1604592000, 5, 'activating state 3'), (1604592000, 12, 'stop recording'), (1604592013, 16, 'record event 5'), (1604592013, 16, 'record event 1'), (1604592013, 15, 'record time changed, start prepare is now: Thu Nov 12 16:19:40 2020'), (1605194380, 5, 'activating state 1'), (1605194380, 0, "Filename calculated as: '/media/hdd/movie/20201112 1620 - MAX HD - Grensevakten (R)'"), (1605194380, 6, 'prepare ok, waiting for begin'), (1605194380, 16, 'record event 2'), (1605194380, 16, 'record event 6'), (1605194381, 16, 'record event 6'), (1605194381, 16, 'record event 9'), (1605194400, 5, 'activating state 2'), (1605194400, 11, 'start recording'), (1605194400, 16, 'record event 0'), (1605194400, 16, 'record event 4'), (1605194700, 16, 'record event 9'), (1605196800, 5, 'activating state 3'), (1605196800, 12, 'stop recording'), (1605196810, 16, 'record event 5'), (1605196811, 16, 'record event 1'), (1605196811, 15, 'record time changed, start prepare is now: Thu Nov 19 16:19:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201112 1620 - MAX HD - Grensevakten (R)</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605194400</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>8</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>24487</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(6:8/s5) Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605815700</e2timebegin>
+        <e2timeend>1605819900</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1605815680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685322, 15, 'record time changed, start prepare is now: Thu Oct 29 20:54:40 2020'), (1604001280, 5, 'activating state 1'), (1604001280, 0, "Filename calculated as: '/media/hdd/movie/20201029 2055 - Nat Geo HD (N) - Vinterveiens helter'"), (1604001280, 6, 'prepare ok, waiting for begin'), (1604001281, 16, 'record event 2'), (1604001281, 16, 'record event 6'), (1604001281, 16, 'record event 6'), (1604001281, 16, 'record event 9'), (1604001300, 5, 'activating state 2'), (1604001300, 11, 'start recording'), (1604001300, 16, 'record event 0'), (1604001300, 16, 'record event 4'), (1604001601, 16, 'record event 9'), (1604005200, 16, 'record event 9'), (1604005500, 5, 'activating state 3'), (1604005500, 12, 'stop recording'), (1604005507, 16, 'record event 5'), (1604005507, 16, 'record event 1'), (1604005507, 15, 'record time changed, start prepare is now: Thu Nov  5 20:54:40 2020'), (1604606080, 5, 'activating state 1'), (1604606080, 0, "Filename calculated as: '/media/hdd/movie/20201105 2055 - Nat Geo HD (N) - Vinterveiens helter'"), (1604606080, 6, 'prepare ok, waiting for begin'), (1604606080, 16, 'record event 2'), (1604606080, 16, 'record event 6'), (1604606080, 16, 'record event 6'), (1604606082, 16, 'record event 9'), (1604606101, 5, 'activating state 2'), (1604606101, 11, 'start recording'), (1604606101, 16, 'record event 0'), (1604606101, 16, 'record event 4'), (1604606402, 16, 'record event 9'), (1604610001, 16, 'record event 9'), (1604610300, 5, 'activating state 3'), (1604610300, 12, 'stop recording'), (1604610308, 16, 'record event 5'), (1604610308, 16, 'record event 1'), (1604610308, 15, 'record time changed, start prepare is now: Thu Nov 12 20:54:40 2020'), (1605210880, 5, 'activating state 1'), (1605210880, 0, "Filename calculated as: '/media/hdd/movie/20201112 2055 - Nat Geo HD (N) - Vinterveiens helter'"), (1605210880, 6, 'prepare ok, waiting for begin'), (1605210880, 16, 'record event 2'), (1605210880, 16, 'record event 6'), (1605210882, 16, 'record event 6'), (1605210882, 16, 'record event 9'), (1605210901, 5, 'activating state 2'), (1605210901, 11, 'start recording'), (1605210901, 16, 'record event 0'), (1605210901, 16, 'record event 4'), (1605211202, 16, 'record event 9'), (1605214801, 16, 'record event 9'), (1605215100, 5, 'activating state 3'), (1605215100, 12, 'stop recording'), (1605215108, 16, 'record event 5'), (1605215108, 16, 'record event 1'), (1605215108, 15, 'record time changed, start prepare is now: Thu Nov 19 20:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201112 2055 - Nat Geo HD (N) - Vinterveiens helter</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605210900</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>8</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Flyhavarikommisjonen: Spesialrapport</e2name>
+        <e2description>(7:26/s2) Kanadisk dokumentarserie fra 2013.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605948900</e2timebegin>
+        <e2timeend>1605952800</e2timeend>
+        <e2duration>3900</e2duration>
+        <e2startprepare>1605948880</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685323, 15, 'record time changed, start prepare is now: Sat Oct 31 09:54:40 2020'), (1604134480, 5, 'activating state 1'), (1604134480, 0, "Filename calculated as: '/media/hdd/movie/20201031 0955 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1604134480, 6, 'prepare ok, waiting for begin'), (1604134480, 16, 'record event 2'), (1604134480, 16, 'record event 6'), (1604134481, 16, 'record event 6'), (1604134481, 16, 'record event 9'), (1604134500, 5, 'activating state 2'), (1604134500, 11, 'start recording'), (1604134500, 16, 'record event 0'), (1604134500, 16, 'record event 4'), (1604134801, 16, 'record event 9'), (1604136600, 16, 'record event 9'), (1604138400, 5, 'activating state 3'), (1604138400, 12, 'stop recording'), (1604138426, 16, 'record event 5'), (1604138426, 16, 'record event 1'), (1604138426, 15, 'record time changed, start prepare is now: Sat Nov  7 09:54:40 2020'), (1604739280, 5, 'activating state 1'), (1604739280, 0, "Filename calculated as: '/media/hdd/movie/20201107 0955 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1604739281, 6, 'prepare ok, waiting for begin'), (1604739281, 16, 'record event 2'), (1604739281, 16, 'record event 6'), (1604739283, 16, 'record event 6'), (1604739283, 16, 'record event 9'), (1604739302, 5, 'activating state 2'), (1604739302, 11, 'start recording'), (1604739302, 16, 'record event 0'), (1604739302, 16, 'record event 4'), (1604739600, 16, 'record event 9'), (1604741400, 16, 'record event 9'), (1604743200, 5, 'activating state 3'), (1604743200, 12, 'stop recording'), (1604743206, 16, 'record event 5'), (1604743206, 16, 'record event 1'), (1604743206, 15, 'record time changed, start prepare is now: Sat Nov 14 09:54:40 2020'), (1605344080, 5, 'activating state 1'), (1605344080, 0, "Filename calculated as: '/media/hdd/movie/20201114 0955 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1605344087, 6, 'prepare ok, waiting for begin'), (1605344089, 16, 'record event 2'), (1605344089, 16, 'record event 6'), (1605344089, 16, 'record event 6'), (1605344089, 16, 'record event 9'), (1605344101, 5, 'activating state 2'), (1605344101, 11, 'start recording'), (1605344101, 16, 'record event 0'), (1605344105, 16, 'record event 4'), (1605344401, 16, 'record event 9'), (1605346202, 16, 'record event 9'), (1605348000, 5, 'activating state 3'), (1605348000, 12, 'stop recording'), (1605348180, 16, 'record event 5'), (1605348180, 16, 'record event 1'), (1605348180, 15, 'record time changed, start prepare is now: Sat Nov 21 09:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201114 0955 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605344100</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>32</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Flyhavarikommisjonen</e2name>
+        <e2description>(10:26/s2) Kanadisk dokumentarserie fra 2013.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605977700</e2timebegin>
+        <e2timeend>1605981600</e2timeend>
+        <e2duration>3900</e2duration>
+        <e2startprepare>1605977680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685323, 15, 'record time changed, start prepare is now: Sat Oct 31 17:54:40 2020'), (1604163280, 5, 'activating state 1'), (1604163280, 0, "Filename calculated as: '/media/hdd/movie/20201031 1755 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604163281, 6, 'prepare ok, waiting for begin'), (1604163281, 16, 'record event 2'), (1604163281, 16, 'record event 6'), (1604163281, 16, 'record event 6'), (1604163282, 16, 'record event 9'), (1604163300, 5, 'activating state 2'), (1604163300, 11, 'start recording'), (1604163300, 16, 'record event 0'), (1604163300, 16, 'record event 4'), (1604163600, 16, 'record event 9'), (1604165400, 16, 'record event 9'), (1604167200, 5, 'activating state 3'), (1604167200, 12, 'stop recording'), (1604167209, 16, 'record event 5'), (1604167209, 16, 'record event 1'), (1604167209, 15, 'record time changed, start prepare is now: Sat Nov  7 17:54:40 2020'), (1604768080, 5, 'activating state 1'), (1604768080, 0, "Filename calculated as: '/media/hdd/movie/20201107 1755 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1604768080, 6, 'prepare ok, waiting for begin'), (1604768080, 16, 'record event 2'), (1604768080, 16, 'record event 6'), (1604768081, 16, 'record event 6'), (1604768081, 16, 'record event 9'), (1604768100, 5, 'activating state 2'), (1604768100, 11, 'start recording'), (1604768100, 16, 'record event 0'), (1604768100, 16, 'record event 4'), (1604768400, 16, 'record event 9'), (1604770200, 16, 'record event 9'), (1604772000, 5, 'activating state 3'), (1604772000, 12, 'stop recording'), (1604772009, 16, 'record event 5'), (1604772009, 16, 'record event 1'), (1604772010, 15, 'record time changed, start prepare is now: Sat Nov 14 17:54:40 2020'), (1605372880, 5, 'activating state 1'), (1605372880, 0, "Filename calculated as: '/media/hdd/movie/20201114 1755 - Nat Geo HD (N) - Flyhavarikommisjonen'"), (1605372881, 6, 'prepare ok, waiting for begin'), (1605372882, 16, 'record event 2'), (1605372882, 16, 'record event 6'), (1605372882, 16, 'record event 6'), (1605372882, 16, 'record event 9'), (1605372900, 5, 'activating state 2'), (1605372900, 11, 'start recording'), (1605372900, 16, 'record event 0'), (1605372901, 16, 'record event 4'), (1605373200, 16, 'record event 9'), (1605375000, 16, 'record event 9'), (1605376800, 5, 'activating state 3'), (1605376800, 12, 'stop recording'), (1605376870, 16, 'record event 5'), (1605376870, 16, 'record event 1'), (1605376870, 15, 'record time changed, start prepare is now: Sat Nov 21 17:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201114 1755 - Nat Geo HD (N) - Flyhavarikommisjonen</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605372900</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>32</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>25923</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(6:2/s3) Kanadisk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1606002900</e2timebegin>
+        <e2timeend>1606007100</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1606002880</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685319, 15, 'record time changed, start prepare is now: Sun Oct 25 00:54:40 2020'), (1603580080, 5, 'activating state 1'), (1603580080, 0, "Filename calculated as: '/media/hdd/movie/20201025 0055 - Nat Geo HD (N) - Vinterveiens helter'"), (1603580080, 16, 'record event 3'), (1603580080, 2, "'prepare' failed: error -6"), (1603580080, 10, 'backoff: retry in 5 seconds'), (1603580080, 16, 'record event 5'), (1603580080, 16, 'record event 1'), (1603580080, 7, 'prepare failed'), (1603580080, 9, 'zap without asking'), (1603580080, 13, 'ok, zapped away'), (1603580085, 5, 'activating state 1'), (1603580085, 0, "Filename calculated as: '/media/hdd/movie/20201025 0055 - Nat Geo HD (N) - Vinterveiens helter'"), (1603580085, 16, 'record event 2'), (1603580085, 16, 'record event 6'), (1603580086, 6, 'prepare ok, waiting for begin'), (1603580086, 16, 'record event 9'), (1603580086, 16, 'record event 6'), (1603580100, 5, 'activating state 2'), (1603580100, 11, 'start recording'), (1603580100, 16, 'record event 0'), (1603580101, 16, 'record event 4'), (1603580400, 16, 'record event 9'), (1603584001, 16, 'record event 9'), (1603584300, 5, 'activating state 3'), (1603584300, 12, 'stop recording'), (1603584337, 16, 'record event 5'), (1603584337, 16, 'record event 1'), (1603584337, 15, 'record time changed, start prepare is now: Sun Nov  1 00:54:40 2020'), (1604188480, 5, 'activating state 1'), (1604188480, 0, "Filename calculated as: '/media/hdd/movie/20201101 0055 - Nat Geo HD (N) - Vinterveiens helter'"), (1604188480, 6, 'prepare ok, waiting for begin'), (1604188480, 16, 'record event 2'), (1604188480, 16, 'record event 6'), (1604188480, 16, 'record event 6'), (1604188481, 16, 'record event 9'), (1604188500, 5, 'activating state 2'), (1604188500, 11, 'start recording'), (1604188500, 16, 'record event 0'), (1604188500, 16, 'record event 4'), (1604188800, 16, 'record event 9'), (1604192401, 16, 'record event 9'), (1604192700, 5, 'activating state 3'), (1604192700, 12, 'stop recording'), (1604192745, 16, 'record event 5'), (1604192745, 16, 'record event 1'), (1604192745, 15, 'record time changed, start prepare is now: Sun Nov  8 00:54:40 2020'), (1604793280, 5, 'activating state 1'), (1604793280, 0, "Filename calculated as: '/media/hdd/movie/20201108 0055 - Nat Geo HD (N) - Vinterveiens helter'"), (1604793281, 6, 'prepare ok, waiting for begin'), (1604793281, 16, 'record event 2'), (1604793281, 16, 'record event 6'), (1604793281, 16, 'record event 6'), (1604793280, 16, 'record event 9'), (1604793300, 5, 'activating state 2'), (1604793300, 11, 'start recording'), (1604793300, 16, 'record event 0'), (1604793300, 16, 'record event 4'), (1604793600, 16, 'record event 9'), (1604797200, 16, 'record event 9'), (1604797500, 5, 'activating state 3'), (1604797500, 12, 'stop recording'), (1604797507, 16, 'record event 5'), (1604797507, 16, 'record event 1'), (1604797508, 15, 'record time changed, start prepare is now: Sun Nov 15 00:54:40 2020'), (1605398080, 5, 'activating state 1'), (1605398080, 0, "Filename calculated as: '/media/hdd/movie/20201115 0055 - Nat Geo HD (N) - Vinterveiens helter'"), (1605398082, 6, 'prepare ok, waiting for begin'), (1605398083, 16, 'record event 2'), (1605398083, 16, 'record event 6'), (1605398083, 16, 'record event 6'), (1605398084, 16, 'record event 9'), (1605398101, 5, 'activating state 2'), (1605398101, 11, 'start recording'), (1605398101, 16, 'record event 0'), (1605398102, 16, 'record event 4'), (1605398401, 16, 'record event 9'), (1605402000, 16, 'record event 9'), (1605402300, 5, 'activating state 3'), (1605402300, 12, 'stop recording'), (1605402400, 16, 'record event 5'), (1605402400, 16, 'record event 1'), (1605402400, 15, 'record time changed, start prepare is now: Sun Nov 22 00:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201115 0055 - Nat Geo HD (N) - Vinterveiens helter</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605398100</e2nextactivation>
+        <e2firsttryprepare>False</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>64</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>Flyhavarikommisjonen: Spesialrapport</e2name>
+        <e2description>(6:7/s2) Britisk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1606067700</e2timebegin>
+        <e2timeend>1606071600</e2timeend>
+        <e2duration>3900</e2duration>
+        <e2startprepare>1606067680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685320, 15, 'record time changed, start prepare is now: Sun Oct 25 18:54:40 2020'), (1603648480, 5, 'activating state 1'), (1603648480, 0, "Filename calculated as: '/media/hdd/movie/20201025 1855 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1603648481, 6, 'prepare ok, waiting for begin'), (1603648481, 16, 'record event 2'), (1603648481, 16, 'record event 6'), (1603648481, 16, 'record event 6'), (1603648485, 16, 'record event 9'), (1603648504, 5, 'activating state 2'), (1603648504, 11, 'start recording'), (1603648504, 16, 'record event 0'), (1603648504, 16, 'record event 4'), (1603648801, 16, 'record event 9'), (1603652400, 5, 'activating state 3'), (1603652400, 12, 'stop recording'), (1603652414, 16, 'record event 5'), (1603652414, 16, 'record event 1'), (1603652414, 15, 'record time changed, start prepare is now: Sun Nov  1 18:54:40 2020'), (1604253280, 5, 'activating state 1'), (1604253280, 0, "Filename calculated as: '/media/hdd/movie/20201101 1855 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1604253280, 6, 'prepare ok, waiting for begin'), (1604253280, 16, 'record event 2'), (1604253280, 16, 'record event 6'), (1604253281, 16, 'record event 6'), (1604253282, 16, 'record event 9'), (1604253301, 5, 'activating state 2'), (1604253301, 11, 'start recording'), (1604253301, 16, 'record event 0'), (1604253301, 16, 'record event 4'), (1604253601, 16, 'record event 9'), (1604257200, 5, 'activating state 3'), (1604257200, 12, 'stop recording'), (1604257207, 16, 'record event 5'), (1604257207, 16, 'record event 1'), (1604257207, 15, 'record time changed, start prepare is now: Sun Nov  8 18:54:40 2020'), (1604858080, 5, 'activating state 1'), (1604858080, 0, "Filename calculated as: '/media/hdd/movie/20201108 1855 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1604858080, 6, 'prepare ok, waiting for begin'), (1604858080, 16, 'record event 2'), (1604858080, 16, 'record event 6'), (1604858082, 16, 'record event 6'), (1604858083, 16, 'record event 9'), (1604858102, 5, 'activating state 2'), (1604858102, 11, 'start recording'), (1604858102, 16, 'record event 0'), (1604858102, 16, 'record event 4'), (1604858401, 16, 'record event 9'), (1604862000, 5, 'activating state 3'), (1604862000, 12, 'stop recording'), (1604862006, 16, 'record event 5'), (1604862006, 16, 'record event 1'), (1604862007, 15, 'record time changed, start prepare is now: Sun Nov 15 18:54:40 2020'), (1605462880, 5, 'activating state 1'), (1605462880, 0, "Filename calculated as: '/media/hdd/movie/20201115 1855 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport'"), (1605462880, 6, 'prepare ok, waiting for begin'), (1605462880, 16, 'record event 2'), (1605462880, 16, 'record event 6'), (1605462880, 16, 'record event 6'), (1605462881, 16, 'record event 9'), (1605462900, 5, 'activating state 2'), (1605462900, 11, 'start recording'), (1605462900, 16, 'record event 0'), (1605462900, 16, 'record event 4'), (1605463201, 16, 'record event 9'), (1605466800, 5, 'activating state 3'), (1605466800, 12, 'stop recording'), (1605466806, 16, 'record event 5'), (1605466806, 16, 'record event 1'), (1605466806, 15, 'record time changed, start prepare is now: Sun Nov 22 18:54:40 2020')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201115 1855 - Nat Geo HD (N) - Flyhavarikommisjonen_ Spesialrapport</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605462900</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>0</e2state>
+        <e2repeated>64</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:1:31E:D:46:FFFF0192:0:0:0:</e2servicereference>
+        <e2servicename>Disney XD (N)</e2servicename>
+        <e2eit>0</e2eit>
+        <e2name>test</e2name>
+        <e2description></e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1582988400</e2timebegin>
+        <e2timeend>1582988700</e2timeend>
+        <e2duration>300</e2duration>
+        <e2startprepare>1582988380</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>/media/hdd/movie/</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685324, 15, 'record time changed, start prepare is now: Sat Feb 29 15:59:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>24360</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(19:24) Pappvin, kjenninger og marihuana. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1590523800</e2timebegin>
+        <e2timeend>1590526200</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1590523780</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685324, 15, 'record time changed, start prepare is now: Tue May 26 22:09:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>24361</e2eit>
+        <e2name>Toll</e2name>
+        <e2description>(20:24) Noen drikker litt for mye. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1590525600</e2timebegin>
+        <e2timeend>1590528000</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1590525580</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685324, 15, 'record time changed, start prepare is now: Tue May 26 22:39:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>24394</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(20:24) Noen drikker litt for mye. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1590609300</e2timebegin>
+        <e2timeend>1590611700</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1590609280</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685325, 15, 'record time changed, start prepare is now: Wed May 27 21:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>24395</e2eit>
+        <e2name>Toll</e2name>
+        <e2description>(21:24) Piller, piller, piller. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1590611100</e2timebegin>
+        <e2timeend>1590613500</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1590611080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685324, 15, 'record time changed, start prepare is now: Wed May 27 22:24:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26121</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(21:24) Piller, piller, piller. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591041300</e2timebegin>
+        <e2timeend>1591043700</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591041280</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685325, 15, 'record time changed, start prepare is now: Mon Jun  1 21:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26122</e2eit>
+        <e2name>Toll</e2name>
+        <e2description>(22:24) Store fartøy og store beslag. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591043100</e2timebegin>
+        <e2timeend>1591045500</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591043080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685325, 15, 'record time changed, start prepare is now: Mon Jun  1 22:24:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26155</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(22:24) Store fartøy og store beslag. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591127700</e2timebegin>
+        <e2timeend>1591130100</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591127680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685326, 15, 'record time changed, start prepare is now: Tue Jun  2 21:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26156</e2eit>
+        <e2name>Toll</e2name>
+        <e2description>(23:24) Siste vakt. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591129500</e2timebegin>
+        <e2timeend>1591131900</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591129480</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685326, 15, 'record time changed, start prepare is now: Tue Jun  2 22:24:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26191</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(23:24) Siste vakt. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591214100</e2timebegin>
+        <e2timeend>1591216500</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591214080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685327, 15, 'record time changed, start prepare is now: Wed Jun  3 21:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26192</e2eit>
+        <e2name>Toll</e2name>
+        <e2description>(24:24) Løgn. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591215900</e2timebegin>
+        <e2timeend>1591218300</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591215880</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685326, 15, 'record time changed, start prepare is now: Wed Jun  3 22:24:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26225</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(22:24) Store fartøy og store beslag. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591301100</e2timebegin>
+        <e2timeend>1591303500</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591301080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685327, 15, 'record time changed, start prepare is now: Thu Jun  4 22:04:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26226</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(23:24) Siste vakt. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591302900</e2timebegin>
+        <e2timeend>1591305300</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591302880</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685327, 15, 'record time changed, start prepare is now: Thu Jun  4 22:34:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1B99:6:46:FFFF012A:0:0:0:</e2servicereference>
+        <e2servicename>TV2 Zebra HD</e2servicename>
+        <e2eit>26227</e2eit>
+        <e2name>Toll (R)</e2name>
+        <e2description>(24:24) Løgn. Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1591304700</e2timebegin>
+        <e2timeend>1591307100</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1591304680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685328, 15, 'record time changed, start prepare is now: Thu Jun  4 23:04:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:1C09:1:46:FFFF014A:0:0:0:</e2servicereference>
+        <e2servicename>Bilkanalen AMSTV</e2servicename>
+        <e2eit>32765</e2eit>
+        <e2name>Garasjen</e2name>
+        <e2description>(5/s9) Norsk bilprogram fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1593458700</e2timebegin>
+        <e2timeend>1593461100</e2timeend>
+        <e2duration>2400</e2duration>
+        <e2startprepare>1593458680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685328, 15, 'record time changed, start prepare is now: Mon Jun 29 21:24:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>24567</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(1:8/s5) Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1602428100</e2timebegin>
+        <e2timeend>1602432300</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1602428080</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685329, 15, 'record time changed, start prepare is now: Sun Oct 11 16:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>24577</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(1:8/s5) Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1602467700</e2timebegin>
+        <e2timeend>1602471900</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1602467680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(946685329, 15, 'record time changed, start prepare is now: Mon Oct 12 03:54:40 2020')]</e2logentries>
+        <e2filename></e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation></e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+    <e2timer>
+        <e2servicereference>1:0:19:EDE:E:46:FFFF019A:0:0:0:</e2servicereference>
+        <e2servicename>Nat Geo HD (N)</e2servicename>
+        <e2eit>25487</e2eit>
+        <e2name>Vinterveiens helter</e2name>
+        <e2description>(6:8/s5) Norsk dokumentarserie fra 2020.</e2description>
+        <e2descriptionextended>N/A</e2descriptionextended>
+        <e2disabled>0</e2disabled>
+        <e2timebegin>1605455700</e2timebegin>
+        <e2timeend>1605459900</e2timeend>
+        <e2duration>4200</e2duration>
+        <e2startprepare>1605455680</e2startprepare>
+        <e2justplay>0</e2justplay>
+        <e2afterevent>3</e2afterevent>
+        <e2location>None</e2location>
+        <e2tags></e2tags>
+        <e2logentries>[(1605430841, 15, 'record time changed, start prepare is now: Sun Nov 15 16:54:40 2020'), (1605455680, 5, 'activating state 1'), (1605455680, 0, "Filename calculated as: '/media/hdd/movie/20201115 1655 - Nat Geo HD (N) - Vinterveiens helter'"), (1605455680, 6, 'prepare ok, waiting for begin'), (1605455680, 16, 'record event 2'), (1605455680, 16, 'record event 6'), (1605455680, 16, 'record event 6'), (1605455682, 16, 'record event 9'), (1605455701, 5, 'activating state 2'), (1605455701, 11, 'start recording'), (1605455701, 16, 'record event 0'), (1605455701, 16, 'record event 4'), (1605456001, 16, 'record event 9'), (1605459601, 16, 'record event 9'), (1605459900, 5, 'activating state 3'), (1605459900, 12, 'stop recording'), (1605459907, 16, 'record event 5'), (1605459907, 16, 'record event 1')]</e2logentries>
+        <e2filename>/media/hdd/movie/20201115 1655 - Nat Geo HD (N) - Vinterveiens helter</e2filename>
+        <e2backoff>0</e2backoff>
+        <e2nextactivation>1605455700</e2nextactivation>
+        <e2firsttryprepare>True</e2firsttryprepare>
+        <e2state>3</e2state>
+        <e2repeated>0</e2repeated>
+        <e2dontsave>0</e2dontsave>
+        <e2cancled>False</e2cancled>
+        <e2toggledisabled>1</e2toggledisabled>
+        <e2toggledisabledimg>off</e2toggledisabledimg>
+    </e2timer>
+</e2timerlist>

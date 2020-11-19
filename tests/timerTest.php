@@ -1,6 +1,7 @@
 <?php
 
 
+use datagutten\dreambox\web\objects;
 use datagutten\dreambox\web\timer;
 use datagutten\tools\files\files;
 use PHPUnit\Framework\TestCase;
@@ -50,9 +51,12 @@ class timerTest extends TestCase
         $this->assertEquals('Timer \'test\' added', $response);
     }
 
-    function tearDown(): void
+    public function testGetTimers()
     {
-        $file = sprintf('%s/channels_127.0.0.1.json',  realpath(__DIR__.'/../src'));
-        unlink($file);
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timers = $timer->get_timers();
+        $this->assertIsArray($timers);
+        $this->assertInstanceOf(objects\timer::class, $timers[0]);
+        $this->assertSame('Nat Geo HD (N)', $timers[1]->channel_name);
     }
 }
