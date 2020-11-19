@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "rmccue/requests": "^1.7",
-        "datagutten/tools": "^1.1",
+        "datagutten/tools": "^1.7",
         "ext-simplexml": "*",
         "ext-json": "*"
     },
