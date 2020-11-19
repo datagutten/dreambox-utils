@@ -10,10 +10,10 @@ matrix:
       name: 'Prefer lowest'
       install:
         - composer self-update --2
-        - composer update --no-interaction --prefer-lowest --no-cache
+        - composer update --no-interaction --prefer-lowest
     - php: 'nightly'
       install:
-        - composer install --no-interaction --ignore-platform-reqs --no-cache
+        - composer update --no-interaction --ignore-platform-reqs
   allow_failures:
     - php: 'nightly'
 
@@ -23,10 +23,12 @@ addons:
    - apache2
    - libapache2-mod-fastcgi
 
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
 install:
-  - if [ "$IGNORE_PLATFORM_REQS" == 'true' ]; then composer install --no-interaction --ignore-platform-reqs;
-    else composer install --no-interaction;
-    fi
+  - composer update --no-interaction
 
 before_script:
  - vendor/bin/phpunit --version
