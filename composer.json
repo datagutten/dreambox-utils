@@ -22,6 +22,6 @@
     },
     "bin": ["utils/save_channels.php"],
     "require-dev": {
-        "phpunit/phpunit": "^8.4"
+        "phpunit/phpunit": "^8.4|^9"
     }
 }
