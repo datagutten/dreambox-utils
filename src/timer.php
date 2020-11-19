@@ -7,7 +7,6 @@ namespace datagutten\dreambox\web;
 use Exception;
 use FileNotFoundException;
 use InvalidArgumentException;
-use Requests;
 use Requests_Exception;
 use Requests_Exception_HTTP;
 use SimpleXMLElement;
@@ -99,7 +98,7 @@ class timer extends common
         if(!empty($description))
             $timer['description'] = $description;
 
-        $response = Requests::post(sprintf('http://%s/web/timerchange', $this->dreambox_ip), [], $timer);
+        $response = $this->session->post('web/timerchange', [], $timer);
         $response->throw_for_status();
         $xml = simplexml_load_string($response->body);
         //$status = $xml->{'e2state'};
@@ -114,7 +113,7 @@ class timer extends common
      */
     public function get_timers()
     {
-        $response = Requests::get(sprintf('http://%s/web/timerlist', $this->dreambox_ip));
+        $response = $this->session->get('web/timerlist');
         $response->throw_for_status();
         return simplexml_load_string($response->body);
     }

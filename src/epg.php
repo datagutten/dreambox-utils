@@ -4,7 +4,6 @@
 namespace datagutten\dreambox\web;
 
 
-use Requests;
 use Requests_Exception;
 use SimpleXMLElement;
 
@@ -23,7 +22,7 @@ class epg extends common
         if ($channel_id === false)
             return [];
         $data = array('sRef' => $channel_id, 'sessionid' => '0');
-        $response = Requests::post(sprintf('http://%s/web/epgservice', $this->dreambox_ip), ['Cache-Control'=>'no-cache,no-store'], $data);
+        $response = $this->session->post('web/epgservice', ['Cache-Control'=>'no-cache,no-store'], $data);
         $response->throw_for_status();
 
         return simplexml_load_string($response->body);
@@ -37,7 +36,7 @@ class epg extends common
     public function channels()
     {
         $data = 'bRef=1:7:1:0:0:0:0:0:0:0:(type == 1) || (type == 17) || (type == 22) || (type == 195) || (type == 25) ORDER BY name&sessionid=0';
-        $response = Requests::post(sprintf('http://%s/web/epgnownext', $this->dreambox_ip), [], $data);
+        $response = $this->session->post('web/epgnownext', [], $data);
         $response->throw_for_status();
         return simplexml_load_string($response->body);
     }
