@@ -10,7 +10,9 @@ else
 
 try {
     $epg = new epg($argv[1]);
-    $epg->save_channel_list();
+    $file = filnavn($argv[1]);
+    $epg->save_channel_list($file);
+    printf('Channels saved as %s', $file);
 }
 catch (Exception $e)
 {

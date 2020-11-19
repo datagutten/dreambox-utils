@@ -34,9 +34,4 @@ class common
         if(strpos($response->body, 'Dreambox WebControl')===false)
             throw new Exception(sprintf('Dreambox not found at %s', $response->url));
     }
-
-    function channel_file()
-    {
-        return sprintf('%s/channels_%s.json',  realpath(__DIR__), $this->dreambox_ip);
-    }
 }

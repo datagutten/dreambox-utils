@@ -59,12 +59,12 @@ class epg extends common
     }
 
     /**
-     * Save channel list to file
+     * Save channel list to a JSON file
+     * @param string $file File to save the channels to
      * @throws Requests_Exception
      */
-    public function save_channel_list()
+    public function save_channel_list(string $file)
     {
-        $file = $this->channel_file();
         file_put_contents($file, json_encode($this->channel_list()));
     }
 }
