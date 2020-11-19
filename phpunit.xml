@@ -7,8 +7,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>./utils</directory>
-            <directory>./channels</directory>
+            <directory>./src</directory>
         </whitelist>
     </filter>
     <logging>
