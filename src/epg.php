@@ -4,7 +4,7 @@
 namespace datagutten\dreambox\web;
 
 
-use Requests_Exception;
+use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use SimpleXMLElement;
 
 class epg extends common
@@ -14,7 +14,7 @@ class epg extends common
     /**
      * @param $channel
      * @return array|SimpleXMLElement
-     * @throws Requests_Exception
+     * @throws DreamboxHTTPException
      */
     public function epg($channel)
     {
@@ -23,7 +23,8 @@ class epg extends common
             return [];
         $data = array('sRef' => $channel_id, 'sessionid' => '0');
         $response = $this->session->post('web/epgservice', ['Cache-Control'=>'no-cache,no-store'], $data);
-        $response->throw_for_status();
+        if(!$response->success)
+            throw new DreamboxHTTPException($response);
 
         return simplexml_load_string($response->body);
     }
@@ -31,19 +32,20 @@ class epg extends common
     /**
      * Get all channels
      * @return SimpleXMLElement
-     * @throws Requests_Exception
+     * @throws DreamboxHTTPException
      */
     public function channels()
     {
         $data = 'bRef=1:7:1:0:0:0:0:0:0:0:(type == 1) || (type == 17) || (type == 22) || (type == 195) || (type == 25) ORDER BY name&sessionid=0';
         $response = $this->session->post('web/epgnownext', [], $data);
-        $response->throw_for_status();
+        if(!$response->success)
+            throw new DreamboxHTTPException($response);
         return simplexml_load_string($response->body);
     }
 
     /**
      * @return array Array with channel id as key and name as value
-     * @throws Requests_Exception
+     * @throws DreamboxHTTPException
      */
     public function channel_list()
     {
@@ -61,7 +63,7 @@ class epg extends common
     /**
      * Save channel list to a JSON file
      * @param string $file File to save the channels to
-     * @throws Requests_Exception
+     * @throws DreamboxHTTPException
      */
     public function save_channel_list(string $file)
     {

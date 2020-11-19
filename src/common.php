@@ -4,9 +4,9 @@
 namespace datagutten\dreambox\web;
 
 
-use Exception;
+use datagutten\dreambox\web\exceptions\DreamboxException;
+use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use InvalidArgumentException;
-use Requests_Exception;
 use Requests_Session;
 
 class common
@@ -20,8 +20,8 @@ class common
     /**
      * common constructor.
      * @param string $dreambox_ip IP to dreambox
-     * @throws Requests_Exception Unable to connect to dreambox
-     * @throws Exception Dreambox not found
+     * @throws DreamboxHTTPException Unable to connect to dreambox
+     * @throws DreamboxException Dreambox not found
      */
     function __construct(string $dreambox_ip)
     {
@@ -30,8 +30,10 @@ class common
         $this->dreambox_ip = $dreambox_ip;
         $this->session = new Requests_Session('http://'.$dreambox_ip.'/');
         $response = $this->session->get('');
-        $response->throw_for_status();
+        if(!$response->success)
+            throw new DreamboxHTTPException($response);
+
         if(strpos($response->body, 'Dreambox WebControl')===false)
-            throw new Exception(sprintf('Dreambox not found at %s', $response->url));
+            throw new DreamboxException(sprintf('Dreambox not found at %s', $response->url));
     }
 }
