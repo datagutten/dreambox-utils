@@ -6,6 +6,8 @@ matrix:
     - php: '7.2'
     - php: '7.3'
     - php: '7.4'
+      after_script:
+        - bash <(curl -s https://codecov.io/bash)
     - php: '7.4'
       name: 'Prefer lowest'
       install:
@@ -46,6 +48,3 @@ before_script:
 
 script:
  - vendor/bin/phpunit
-
-after_script:
-  - bash <(curl -s https://codecov.io/bash)
