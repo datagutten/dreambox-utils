@@ -124,4 +124,19 @@ class timer extends common
         }
         return $timers;
     }
+
+    public function has_timer($channel, $start, $end, $margin = 10)
+    {
+        $timers = $this->get_timers();
+        foreach($timers as $timer)
+        {
+            if($timer->channel_name != $channel)
+                continue;
+            if($timer->time_begin < $start + (60*$margin))
+                continue;
+            if($timer->time_end >= $end)
+                return $timer;
+        }
+        return false;
+    }
 }

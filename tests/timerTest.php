@@ -59,4 +59,11 @@ class timerTest extends TestCase
         $this->assertInstanceOf(objects\timer::class, $timers[0]);
         $this->assertSame('Nat Geo HD (N)', $timers[1]->channel_name);
     }
+
+    public function testHasTimer()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
+        $this->assertInstanceOf(objects\timer::class, $status);
+    }
 }
