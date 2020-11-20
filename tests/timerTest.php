@@ -1,6 +1,7 @@
 <?php /** @noinspection PhpUnhandledExceptionInspection */
 
 
+use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\objects;
 use datagutten\dreambox\web\timer;
 use datagutten\tools\files\files;
@@ -49,6 +50,14 @@ class timerTest extends TestCase
         $channel_id = $timer->channel_id('NRK Super/NRK3');
         $response = $timer->add_timer($channel_id, $start, $end, 'test');
         $this->assertEquals('Timer \'test\' added', $response);
+    }
+
+    public function testAdd_timer_error()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $this->expectException(DreamboxException::class);
+        $this->expectExceptionMessage('Conflicting Timer(s) detected!  / Vinterveiens helter / Grensevakten x10');
+        $timer->add_timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', 1606056900, 1606061100, 'test');
     }
 
     public function testGetTimers()

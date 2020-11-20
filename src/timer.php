@@ -78,6 +78,7 @@ class timer extends common
      * @param string $description Recording description
      * @return string Response from dreambox
      * @throws DreamboxHTTPException
+     * @throws DreamboxException Error adding timer
      */
     public function add_timer(string $channel_id, int $begin, int $end, string $name, $description='')
     {
@@ -94,10 +95,11 @@ class timer extends common
         $response = $this->session->post('web/timerchange', [], $timer);
         if(!$response->success)
             throw new DreamboxHTTPException($response);
-        $xml = simplexml_load_string($response->body);
-        //$status = $xml->{'e2state'};
-
-        return $xml->{'e2statetext'};
+        $state = objects\result::parse_string($response->body);
+        if($state->state===false)
+            throw new DreamboxException($state->state_text);
+        else
+            return $state->state_text;
     }
 
     /**
