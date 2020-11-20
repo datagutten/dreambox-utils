@@ -120,7 +120,6 @@ class timer extends common
         }
         return $timers;
     }
-
     /**
      * @param string $channel
      * @param int $start
@@ -136,10 +135,16 @@ class timer extends common
         {
             if($timer->channel_name != $channel)
                 continue;
-            if($timer->time_begin < $start + (60*$margin))
+            if(date('Y-m-d', $timer->time_begin)!=date('Y-m-d', $start))
                 continue;
-            if($timer->time_end >= $end)
-                return $timer;
+
+            if($timer->time_begin > $start)
+                continue;
+
+            if($timer->time_end < $end)
+                continue;
+
+            return $timer;
         }
         return false;
     }
