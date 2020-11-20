@@ -4,7 +4,11 @@
 namespace datagutten\dreambox\web;
 
 
+use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
+use datagutten\dreambox\web\objects;
+use FileNotFoundException;
+use InvalidArgumentException;
 use SimpleXMLElement;
 
 class epg extends common
@@ -80,5 +84,19 @@ class epg extends common
     public function save_channel_list(string $file)
     {
         file_put_contents($file, json_encode($this->channel_list()));
+    }
+
+    /**
+     * Search for events in EPG
+     * @param string $query Search query
+     * @return objects\event[] Array with event objects
+     * @throws DreamboxHTTPException
+     */
+    public function search(string $query)
+    {
+        $response = $this->session->post('web/epgsearch', [], ['search'=>$query, 'sessionid'=>'0']);
+        if(!$response->success)
+            throw new DreamboxHTTPException($response);
+        return objects\event::parse_event_list($response->body);
     }
 }
