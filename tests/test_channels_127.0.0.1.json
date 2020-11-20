@@ -1,1 +1,6 @@
-{"1:0:19:12D:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3","1:0:19:515:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3 Lydteks","1:0:1:5EC:1:46:FFFF014A:0:0:0:":"NRK Tegnspr\u00e5k"}
+{
+  "1:0:19:12D:9:46:FFFF016A:0:0:0:": "NRK Super\/NRK3",
+  "1:0:19:515:9:46:FFFF016A:0:0:0:": "NRK Super\/NRK3 Lydteks",
+  "1:0:1:5EC:1:46:FFFF014A:0:0:0:": "NRK Tegnspr\u00e5k",
+  "1:0:19:EDE:E:46:FFFF019A:0:0:0:": "Nat Geo HD (N)"
+}

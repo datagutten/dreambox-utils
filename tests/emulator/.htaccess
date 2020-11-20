@@ -1,3 +1,6 @@
 RewriteEngine on
 RewriteRule ^.*timerchange.*$ timerchange.php
 RewriteRule ^.*timerlist$ data/timers.xml
+RewriteRule ^.*epgservice$ data/epgservice.xml
+RewriteRule ^.*epgnownext$ data/epgnownext.xml
+RewriteRule ^.*epgsearch$ data/epgsearch.xml
