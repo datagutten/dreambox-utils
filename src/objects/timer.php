@@ -6,7 +6,7 @@ namespace datagutten\dreambox\web\objects;
 
 use SimpleXMLElement;
 
-class timer
+class timer extends XMLData
 {
     public $xml;
     /**
@@ -112,6 +112,7 @@ class timer
      */
     public function __construct(SimpleXMLElement $timer_xml)
     {
+        parent::__construct($timer_xml);
         $this->xml = $timer_xml;
 
         $this->channel_id = (string)$this->xml->{'e2servicereference'};
@@ -138,20 +139,5 @@ class timer
         $this->repeated = $this->int('e2repeated');
         $this->dont_save = $this->bool('e2dontsave');
         $this->canceled = $this->bool('e2cancled');
-    }
-
-    public function string($tag)
-    {
-        return (string)$this->xml->$tag;
-    }
-
-    public function int($tag)
-    {
-        return (int)$this->xml->$tag;
-    }
-
-    public function bool($tag)
-    {
-        return $this->xml->$tag === '1';
     }
 }
