@@ -58,4 +58,20 @@ class event extends XMLData
         $this->service_reference = $this->string('e2eventservicereference');
         $this->service_name = $this->string('e2eventservicename');
     }
+
+    /**
+     * Parse event list XML
+     * @param string $xml XML string with root tag e2eventlist
+     * @return self[]
+     */
+    public static function parse_event_list(string $xml)
+    {
+        $xml = simplexml_load_string($xml);
+        $events = [];
+        foreach($xml->{'e2event'} as $event)
+        {
+            $events[] = new self($event);
+        }
+        return $events;
+    }
 }
