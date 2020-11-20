@@ -12,10 +12,7 @@ use InvalidArgumentException;
 
 class timer extends common
 {
-    /**
-     * @var array Channels on dreambox
-     */
-    public $channels;
+
 
     /**
      * timer constructor.
@@ -27,12 +24,7 @@ class timer extends common
     function __construct($dreambox_ip, string $channel_file)
     {
         parent::__construct($dreambox_ip);
-        if(!file_exists($channel_file))
-            throw new FileNotFoundException($channel_file);
-        $data = file_get_contents($channel_file);
-        $this->channels = json_decode($data, true);
-        if(empty($this->channels))
-            throw new DreamboxException('Channel list not found');
+        $this->load_channel_list($channel_file);
     }
 
     public $timer_template=array(

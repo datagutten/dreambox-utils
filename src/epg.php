@@ -9,8 +9,6 @@ use SimpleXMLElement;
 
 class epg extends common
 {
-    public $channels;
-
     /**
      * @param $channel
      * @return array|SimpleXMLElement
