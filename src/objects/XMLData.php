@@ -4,6 +4,7 @@
 namespace datagutten\dreambox\web\objects;
 
 
+use InvalidArgumentException;
 use SimpleXMLElement;
 
 class XMLData
@@ -13,10 +14,8 @@ class XMLData
      */
     public $xml;
 
-    public function __construct(SimpleXMLElement $xml, string $root_element = '')
+    public function __construct(SimpleXMLElement $xml)
     {
-        if(!empty($root_element) && $xml->getName()!=$root_element)
-            throw new \InvalidArgumentException(printf('Expected root element %s, %s provided', $root_element, $xml->getName()));
         $this->xml = $xml;
     }
 
@@ -33,5 +32,31 @@ class XMLData
     public function bool($tag)
     {
         return $this->xml->$tag === '1' || $this->xml->$tag == 'True';
+    }
+
+    protected static function validate_element(SimpleXMLElement $xml, $element)
+    {
+        if(!empty($element) && $xml->getName()!=$element)
+            throw new InvalidArgumentException(sprintf('Expected root element %s, %s provided', $element, $xml->getName()));
+    }
+
+    /**
+     * Create objects from XML string
+     * @param string $xml XML string
+     * @param string $root_element XML root element to be validated
+     * @param string $class Class to use
+     * @return array
+     */
+    protected static function parse_string(string $xml, string $root_element, string $class)
+    {
+        $xml = simplexml_load_string($xml);
+        self::validate_element($xml, $root_element);
+
+        $events = [];
+        foreach($xml->children() as $child)
+        {
+            $events[] = new $class($child);
+        }
+        return $events;
     }
 }

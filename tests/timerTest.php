@@ -76,4 +76,12 @@ class timerTest extends TestCase
         $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
         $this->assertInstanceOf(objects\timer::class, $status);
     }
+
+    public function testWrongXML()
+    {
+        $xml_file = files::path_join(__DIR__, 'emulator', 'data', 'epgnownext.xml');
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Expected root element e2timerlist, e2eventlist provided');
+        datagutten\dreambox\web\objects\timer::parse(file_get_contents($xml_file));
+    }
 }

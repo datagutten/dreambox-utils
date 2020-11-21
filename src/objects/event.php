@@ -48,6 +48,8 @@ class event extends XMLData
     public function __construct(SimpleXMLElement $xml)
     {
         parent::__construct($xml);
+        self::validate_element($xml, 'e2event');
+
         $this->id = $this->int('e2eventid');
         $this->start = $this->int('e2eventstart');
         $this->duration = $this->int('e2eventduration');
@@ -73,5 +75,15 @@ class event extends XMLData
             $events[] = new self($event);
         }
         return $events;
+    }
+
+    /**
+     * Parse event list XML
+     * @param string $xml XML string with root element e2eventlist
+     * @return self[]
+     */
+    public static function parse(string $xml)
+    {
+        return parent::parse_string($xml, 'e2eventlist', self::class);
     }
 }

@@ -95,7 +95,7 @@ class timer extends common
         $response = $this->session->post('web/timerchange', [], $timer);
         if(!$response->success)
             throw new DreamboxHTTPException($response);
-        $state = objects\result::parse_string($response->body);
+        $state = objects\result::parse($response->body);
         if($state->state===false)
             throw new DreamboxException($state->state_text);
         else
@@ -112,13 +112,7 @@ class timer extends common
         $response = $this->session->get('web/timerlist');
         if(!$response->success)
             throw new DreamboxHTTPException($response);
-        $xml = simplexml_load_string($response->body);
-        $timers = [];
-        foreach($xml->{'e2timer'} as $timer)
-        {
-            $timers[] = new objects\timer($timer);
-        }
-        return $timers;
+        return objects\timer::parse($response->body);
     }
     /**
      * @param string $channel

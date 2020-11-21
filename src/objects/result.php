@@ -8,7 +8,6 @@ use SimpleXMLElement;
 
 class result extends XMLData
 {
-    //e2simplexmlresult
     /**
      * @var bool
      */
@@ -20,19 +19,21 @@ class result extends XMLData
 
     function __construct(SimpleXMLElement $xml)
     {
-        parent::__construct($xml, 'e2simplexmlresult');
+        parent::__construct($xml);
+        self::validate_element($xml, 'e2simplexmlresult');
         $this->state = $this->bool('e2state');
         $this->state_text = $this->string('e2statetext');
     }
 
     /**
-     * Parse event list XML
+     * Parse result XML
      * @param string $xml XML string with root tag e2simplexmlresult
      * @return self
      */
-    public static function parse_string(string $xml)
+    public static function parse(string $xml)
     {
         $xml = simplexml_load_string($xml);
+        self::validate_element($xml, 'e2simplexmlresult');
         return new self($xml);
     }
 }

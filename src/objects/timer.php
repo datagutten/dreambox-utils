@@ -113,7 +113,7 @@ class timer extends XMLData
     public function __construct(SimpleXMLElement $timer_xml)
     {
         parent::__construct($timer_xml);
-        $this->xml = $timer_xml;
+        self::validate_element($timer_xml, 'e2timer');
 
         $this->channel_id = (string)$this->xml->{'e2servicereference'};
         $this->channel_name = (string)$this->xml->{'e2servicename'};
@@ -139,5 +139,15 @@ class timer extends XMLData
         $this->repeated = $this->int('e2repeated');
         $this->dont_save = $this->bool('e2dontsave');
         $this->canceled = $this->bool('e2cancled');
+    }
+
+    /**
+     * Parse timer list XML
+     * @param string $xml XML string with root element e2timerlist
+     * @return self[]
+     */
+    public static function parse(string $xml)
+    {
+        return parent::parse_string($xml, 'e2timerlist', self::class);
     }
 }
