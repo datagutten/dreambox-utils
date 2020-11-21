@@ -26,7 +26,7 @@ class epg extends common
         if(!$response->success)
             throw new DreamboxHTTPException($response);
 
-        return objects\event::parse_event_list($response->body);
+        return objects\event::parse($response->body);
     }
 
     /**
@@ -97,6 +97,6 @@ class epg extends common
         $response = $this->session->post('web/epgsearch', [], ['search'=>$query, 'sessionid'=>'0']);
         if(!$response->success)
             throw new DreamboxHTTPException($response);
-        return objects\event::parse_event_list($response->body);
+        return objects\event::parse($response->body);
     }
 }
