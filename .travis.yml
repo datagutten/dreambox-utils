@@ -30,8 +30,8 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-env:
-  COMPOSER_CACHE_DIR=$HOME/.composer/cache/files
+before_install:
+  - export COMPOSER_CACHE_DIR=$HOME/.composer/cache/files
 
 install:
   - composer update --no-interaction
