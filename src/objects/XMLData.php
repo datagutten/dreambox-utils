@@ -19,17 +19,17 @@ class XMLData
         $this->xml = $xml;
     }
 
-    public function string($tag)
+    protected function string($tag)
     {
         return (string)$this->xml->$tag;
     }
 
-    public function int($tag)
+    protected function int($tag)
     {
         return (int)$this->xml->$tag;
     }
 
-    public function bool($tag)
+    protected function bool($tag)
     {
         return $this->xml->$tag === '1' || $this->xml->$tag == 'True';
     }
