@@ -71,6 +71,7 @@ class timerTest extends TestCase
 
     public function testHasTimer()
     {
+        date_default_timezone_set('Europe/Oslo');
         $timer = new timer($this->dreambox_ip, $this->channel_file);
         $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
         $this->assertInstanceOf(objects\timer::class, $status);
