@@ -29,9 +29,7 @@ addons:
 cache:
   directories:
     - $HOME/.composer/cache/files
-
-before_install:
-  - export COMPOSER_CACHE_DIR=$HOME/.composer/cache/files
+    - $HOME/.cache/composer/files
 
 install:
   - composer update --no-interaction
