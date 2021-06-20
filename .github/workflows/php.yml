@@ -28,6 +28,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-php${{ matrix.php }}-
 
+      - name: Cache docker images
+        uses: satackey/action-docker-layer-caching@v0.0.11
+        # Ignore the failure of a step and avoid terminating the job.
+        continue-on-error: true
+
       - name: Build docker image
         run: docker build -t dreambox_emulator tests/emulator
 
