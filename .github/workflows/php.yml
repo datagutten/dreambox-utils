@@ -46,3 +46,6 @@ jobs:
 
       - name: Run tests
         run: vendor/bin/phpunit
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
