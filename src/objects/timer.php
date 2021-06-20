@@ -38,13 +38,21 @@ class timer extends XMLData
      */
     public $disabled;
     /**
-     * @var int
+     * @var int Timer start
      */
     public $time_begin;
     /**
-     * @var int
+     * @var int Timer start, alias for time_begin
+     */
+    public $start;
+    /**
+     * @var int Timer end
      */
     public $time_end;
+    /**
+     * @var int Timer end, alias for time_end
+     */
+    public $end;
     /**
      * @var int
      */
@@ -123,7 +131,9 @@ class timer extends XMLData
         $this->description_extended = $this->string('e2descriptionextended');
         $this->disabled = $this->bool('e2disabled');
         $this->time_begin = $this->int('e2timebegin');
+        $this->start = $this->time_begin;
         $this->time_end = $this->int('e2timeend');
+        $this->end = $this->time_end;
         $this->duration = $this->int('e2duration');
         $this->start_prepare = $this->int('e2startprepare');
         $this->just_play = $this->bool('e2justplay');
