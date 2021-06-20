@@ -2,6 +2,7 @@
 
 
 use datagutten\dreambox\web\exceptions\DreamboxException;
+use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use datagutten\dreambox\web\objects;
 use datagutten\dreambox\web\timer;
 use datagutten\tools\files\files;
@@ -35,11 +36,27 @@ class timerTest extends TestCase
         $this->assertIsArray($timer->channels);
         $this->assertSame('NRK Super/NRK3', $timer->channels['1:0:19:12D:9:46:FFFF016A:0:0:0:']);
     }
+
     public function testGetChannelId()
     {
         $timer = new timer($this->dreambox_ip, $this->channel_file);
         $channel_id = $timer->channel_id('NRK Super/NRK3');
         $this->assertSame('1:0:19:12D:9:46:FFFF016A:0:0:0:', $channel_id);
+    }
+
+    public function testGetChannelIdInvalid()
+    {
+        $this->expectException(DreamboxException::class);
+        $this->expectExceptionMessage('Channel id not found');
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->channel_id('Invalid');
+    }
+
+    public function testGetChannelIdReverse()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $channel_name = $timer->channel_id_reverse('1:0:19:12D:9:46:FFFF016A:0:0:0:');
+        $this->assertSame('NRK Super/NRK3', $channel_name);
     }
 
     public function testAdd_timer()
@@ -48,8 +65,15 @@ class timerTest extends TestCase
         $start = strtotime('16:00');
         $end = strtotime('17:00');
         $channel_id = $timer->channel_id('NRK Super/NRK3');
-        $response = $timer->add_timer($channel_id, $start, $end, 'test');
+        $response = $timer->add_timer($channel_id, $start, $end, 'test', 'test2');
         $this->assertEquals('Timer \'test\' added', $response);
+    }
+
+    public function testAdd_timer_HTTPError()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $this->expectException(DreamboxHTTPException::class);
+        $timer->add_timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', 404, 1606061100, 'test');
     }
 
     public function testAdd_timer_error()
