@@ -1,0 +1,42 @@
+name: Dependency tests
+
+on: push
+jobs:
+  prefer_lowest:
+    name: 'Prefer lowest dependency versions'
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          extensions: curl
+
+      - name: Install dependencies
+        run: composer update --prefer-lowest --no-progress
+
+      - name: Run tests
+        run: vendor/bin/phpunit
+
+  locked:
+    name: 'Locked dependency versions'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          extensions: curl
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run tests
+        run: vendor/bin/phpunit
