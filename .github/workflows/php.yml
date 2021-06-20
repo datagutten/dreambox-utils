@@ -1,4 +1,4 @@
-name: PHP Composer
+name: PHP version tests
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
           extensions: curl
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+        run: composer update --prefer-dist --no-progress
 
       - name: Run tests
         run: vendor/bin/phpunit
