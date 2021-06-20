@@ -59,6 +59,13 @@ class timerTest extends TestCase
         $this->assertSame('NRK Super/NRK3', $channel_name);
     }
 
+    public function testGetChannelIdReverseInvalid()
+    {
+        $this->expectException(DreamboxException::class);
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->channel_id_reverse('bad');
+    }
+
     public function testAdd_timer()
     {
         $timer = new timer($this->dreambox_ip, $this->channel_file);
@@ -74,6 +81,13 @@ class timerTest extends TestCase
         $timer = new timer($this->dreambox_ip, $this->channel_file);
         $this->expectException(DreamboxHTTPException::class);
         $timer->add_timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', 404, 1606061100, 'test');
+    }
+
+    public function testAdd_timer_InvalidChannel()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $this->expectException(InvalidArgumentException::class);
+        $timer->add_timer('bad', 1, 2, 'test');
     }
 
     public function testAdd_timer_error()
@@ -99,6 +113,15 @@ class timerTest extends TestCase
         $timer = new timer($this->dreambox_ip, $this->channel_file);
         $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
         $this->assertInstanceOf(objects\timer::class, $status);
+    }
+
+    public function testHasTimerDebug()
+    {
+        date_default_timezone_set('Europe/Oslo');
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->debug = true;
+        $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
+        $this->expectOutputRegex('/Recording start: 2020-11-16 03:55 program start: 2020-11-16 03:55\s+/');
     }
 
     public function testWrongXML()
