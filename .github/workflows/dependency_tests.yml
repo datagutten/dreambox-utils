@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/emulator
+      - uses: actions/emulator@v1
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
