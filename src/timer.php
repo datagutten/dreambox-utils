@@ -12,7 +12,10 @@ use InvalidArgumentException;
 
 class timer extends common
 {
-
+    /**
+     * @var bool Show debugging information
+     */
+    public $debug = false;
 
     /**
      * timer constructor.
@@ -133,7 +136,13 @@ class timer extends common
                 continue;
 
             if($timer->time_begin > $start)
+            {
+                if($this->debug)
+                    printf("Recording start: %s after program start: %s\n", date('Y-m-d H:i', $timer->time_begin), date('Y-m-d H:i', $start));
                 continue;
+            }
+            elseif($this->debug)
+                printf("Recording start: %s program start: %s\n", date('Y-m-d H:i', $timer->time_begin), date('Y-m-d H:i', $start));
 
             if($timer->time_end < $end)
                 continue;
