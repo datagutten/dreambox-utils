@@ -5,6 +5,8 @@ runs:
   steps:
     - name: Build docker image
       run: docker build -t dreambox_emulator tests/emulator
+      shell: bash
 
     - name: Start dreambox emulator
       run: docker run -d -p 80:80 dreambox_emulator
+      shell: bash
