@@ -16,6 +16,10 @@ class timer extends common
      * @var bool Show debugging information
      */
     public $debug = false;
+    /**
+     * @var timer[] Timers on dreambox
+     */
+    public $timers;
 
     /**
      * timer constructor.
@@ -28,6 +32,7 @@ class timer extends common
     {
         parent::__construct($dreambox_ip);
         $this->load_channel_list($channel_file);
+        $this->timers = $this->get_timers();
     }
 
     public $timer_template=array(
@@ -103,6 +108,7 @@ class timer extends common
             throw new DreamboxException($state->state_text);
         else
             return $state->state_text;
+        //TODO: Add timer to timers property
     }
 
     /**
@@ -127,8 +133,10 @@ class timer extends common
      */
     public function has_timer(string $channel, int $start, int $end, $margin = 10)
     {
-        $timers = $this->get_timers();
-        foreach($timers as $timer)
+        if(empty($this->timers))
+            $this->timers = $this->get_timers();
+
+        foreach($this->timers as $timer)
         {
             if($timer->channel_name != $channel)
                 continue;
