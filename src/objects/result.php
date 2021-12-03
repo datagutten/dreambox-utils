@@ -30,7 +30,7 @@ class result extends XMLData
      * @param string $xml XML string with root tag e2simplexmlresult
      * @return self
      */
-    public static function parse(string $xml)
+    public static function parse(string $xml): result
     {
         $xml = simplexml_load_string($xml);
         self::validate_element($xml, 'e2simplexmlresult');

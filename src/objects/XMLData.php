@@ -45,9 +45,9 @@ class XMLData
      * @param string $xml XML string
      * @param string $root_element XML root element to be validated
      * @param string $class Class to use
-     * @return array
+     * @return XMLData[]
      */
-    protected static function parse_string(string $xml, string $root_element, string $class)
+    protected static function parse_string(string $xml, string $root_element, string $class): array
     {
         $xml = simplexml_load_string($xml);
         self::validate_element($xml, $root_element);

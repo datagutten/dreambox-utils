@@ -156,7 +156,7 @@ class timer extends XMLData
      * @param string $xml XML string with root element e2timerlist
      * @return self[]
      */
-    public static function parse(string $xml)
+    public static function parse(string $xml): array
     {
         return parent::parse_string($xml, 'e2timerlist', self::class);
     }
