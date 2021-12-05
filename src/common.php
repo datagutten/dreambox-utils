@@ -8,14 +8,14 @@ use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use FileNotFoundException;
 use InvalidArgumentException;
-use Requests_Session;
+use Wporg\Requests;
 
 class common
 {
     public $dreambox_ip;
 
     /**
-     * @var Requests_Session
+     * @var Requests\Session
      */
     public $session;
 
@@ -35,7 +35,7 @@ class common
         if(empty($dreambox_ip))
             throw new InvalidArgumentException('Dreambox IP empty');
         $this->dreambox_ip = $dreambox_ip;
-        $this->session = new Requests_Session('http://'.$dreambox_ip.'/');
+        $this->session = new Requests\Session('http://'.$dreambox_ip.'/');
         $response = $this->session->get('');
         if(!$response->success)
             throw new DreamboxHTTPException($response);
