@@ -66,7 +66,7 @@ class epgTest extends TestCase
         $channels = $epg->channels();
         $this->assertInstanceOf(SimpleXMLElement::class, $channels);
         $events = iterator_to_array($channels->{'e2event'}, false);
-        $this->assertEquals($events[3]->{'e2eventservicename'}, 'BBC World News');
+        $this->assertEquals('BBC World News', $events[3]->{'e2eventservicename'});
     }
 
     public function testChannel_list()
