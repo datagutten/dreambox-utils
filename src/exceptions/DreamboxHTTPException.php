@@ -4,7 +4,7 @@
 namespace datagutten\dreambox\web\exceptions;
 
 
-use Wporg\Requests;
+use WpOrg\Requests;
 use Throwable;
 
 class DreamboxHTTPException extends DreamboxException

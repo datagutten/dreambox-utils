@@ -8,7 +8,7 @@ use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use FileNotFoundException;
 use InvalidArgumentException;
-use Wporg\Requests;
+use WpOrg\Requests;
 
 class common
 {
