@@ -44,18 +44,21 @@ class XMLData
      * Create objects from XML string
      * @param string $xml XML string
      * @param string $root_element XML root element to be validated
-     * @param string $class Class to use
+     * @param ?callable $callback Pass each element to this function
      * @return XMLData[]
      */
-    protected static function parse_string(string $xml, string $root_element, string $class): array
+    public static function parse_string(string $xml, string $root_element, callable $callback=null): array
     {
         $xml = simplexml_load_string($xml);
         self::validate_element($xml, $root_element);
 
         $events = [];
-        foreach($xml->children() as $child)
+        foreach ($xml->children() as $child)
         {
-            $events[] = new $class($child);
+            if (!empty($callback))
+                $events[] = $callback($child);
+            else
+                $events[] = new static($child);
         }
         return $events;
     }
