@@ -109,6 +109,13 @@ class timer extends common
         }
     }
 
+    /**
+     * Replace an existing timer with another
+     * @param objects\timer $old Existing timer to be replaced
+     * @param objects\timer $new New timer
+     * @return string Response from dreambox
+     * @throws DreamboxException
+     */
     public function replace_timer(objects\timer $old, objects\timer $new): string
     {
         $new->delete_old = true;
