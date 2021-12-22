@@ -66,6 +66,23 @@ class timerTest extends TestCase
         $timer->channel_id_reverse('bad');
     }
 
+    public function test_build()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer_obj = new objects\timer();
+        $timer_obj->time_begin = strtotime('16:00');
+        $timer_obj->time_end = strtotime('17:00');
+        $timer_obj->channel_id = $timer->channel_id('NRK Super/NRK3');
+        $timer_obj->name = 'test';
+
+        $timer_array = $timer_obj->array();
+        $this->assertFalse($timer_obj->disabled);
+        $this->assertEquals(0, $timer_array['disabled']);
+        $this->assertEquals(0, $timer_array['deleteOldOnSave']);
+        $timer_obj->disabled = true;
+        $this->assertEquals(1, $timer_obj->array()['disabled']);
+    }
+
     public function testAdd_timer()
     {
         $timer = new timer($this->dreambox_ip, $this->channel_file);

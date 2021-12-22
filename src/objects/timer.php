@@ -4,11 +4,13 @@
 namespace datagutten\dreambox\web\objects;
 
 
+use InvalidArgumentException;
+
 class timer
 {
     public static array $after_event_text = [0 => 'Do nothing', 1 => 'Standby', 2 => 'Shutdown', 3 => 'Auto'];
     /**
-     * @var string
+     * @var string Dreambox channel id
      */
     public string $channel_id;
     /**
@@ -16,15 +18,15 @@ class timer
      */
     public string $channel_name;
     /**
-     * @var string
+     * @var bool
      */
-    public string $eit;
+    public bool $eit = false;
     /**
      * @var string
      */
     public string $name;
     /**
-     * @var string
+     * @var string Timer description
      */
     public string $description = '';
     /**
@@ -36,7 +38,7 @@ class timer
      */
     public bool $disabled = false;
     /**
-     * @var int Timer start
+     * @var int Timer start timestamp
      */
     public int $time_begin;
     /**
@@ -44,7 +46,7 @@ class timer
      */
     public int $start;
     /**
-     * @var int Timer end
+     * @var int Timer end timestamp
      */
     public int $time_end;
     /**
@@ -74,7 +76,7 @@ class timer
     /**
      * @var string
      */
-    public string $tags;
+    public string $tags = '';
     /**
      * @var string
      */
@@ -130,5 +132,27 @@ class timer
             $timer = new TimerXML($timer_xml);
             return $timer->timer;
         });
+    }
+
+    public function array(): array
+    {
+        if (!preg_match('/[0-9A-F:]{30}/', $this->channel_id))
+            throw new InvalidArgumentException('Invalid channel id: ' . $this->channel_id);
+
+        return [
+            'sRef' => $this->channel_id,
+            'begin' => $this->time_begin,
+            'end' => $this->time_end,
+            'name' => $this->name,
+            'description' => $this->description,
+            'dirname' => $this->location,
+            'tags' => $this->tags,
+            'afterevent' => $this->after_event,
+            'eit' => $this->eit ? 1 : 0,
+            'disabled' => $this->disabled ? 1 : 0,
+            'repeated' => $this->repeated,
+            'deleteOldOnSave' => $this->delete_old ? 1 : 0,
+            'sessionId' => $this->sessionId
+        ];
     }
 }

@@ -88,27 +88,38 @@ class timer extends common
      * @throws DreamboxHTTPException
      * @throws DreamboxException Error adding timer
      */
-    public function add_timer(string $channel_id, int $begin, int $end, string $name, $description='')
+    public function add_timer(string $channel_id, int $begin, int $end, string $name, string $description = ''): string
     {
-        if(!preg_match('/[0-9A-F:]{30}/', $channel_id))
-            throw new InvalidArgumentException('Invalid channel id: '.$channel_id);
-        $timer = $this->timer_template;
-        $timer['sRef'] = $channel_id;
-        $timer['begin'] = $begin;
-        $timer['end'] = $end;
-        $timer['name'] = $name;
-        if(!empty($description))
-            $timer['description'] = $description;
+        $timer = new objects\timer();
+        $timer->channel_id = $channel_id;
+        $timer->time_begin = $begin;
+        $timer->time_end = $end;
+        $timer->name = $name;
+        $timer->description = $description;
 
-        $response = $this->session->post('web/timerchange', [], $timer);
-        if(!$response->success)
+        return $this->add_timer_obj($timer);
+    }
+
+    /**
+     * Add a timer to the dreambox
+     * @param objects\timer $timer Timer object
+     * @return string Response from dreambox
+     * @throws DreamboxException Error adding timer
+     * @throws DreamboxHTTPException
+     */
+    public function add_timer_obj(objects\timer $timer): string
+    {
+        $response = $this->session->post('web/timerchange', [], $timer->array());
+        if (!$response->success)
             throw new DreamboxHTTPException($response);
         $state = objects\result::parse($response->body);
-        if($state->state===false)
+        if ($state->state === false)
             throw new DreamboxException($state->state_text);
         else
+        {
+            $this->timers[] = $timer;
             return $state->state_text;
-        //TODO: Add timer to timers property
+        }
     }
 
     /**
