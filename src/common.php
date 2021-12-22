@@ -12,17 +12,17 @@ use WpOrg\Requests;
 
 class common
 {
-    public $dreambox_ip;
+    public string $dreambox_ip;
 
     /**
      * @var Requests\Session
      */
-    public $session;
+    public Requests\Session $session;
 
     /**
      * @var array Array with channel names as values and dreambox channel ids as keys
      */
-    public $channels;
+    public array $channels;
 
     /**
      * common constructor.

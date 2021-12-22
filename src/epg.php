@@ -19,7 +19,7 @@ class epg extends common
      * @return objects\event[] Array with event objects
      * @throws DreamboxHTTPException
      */
-    public function epg(string $channel_id)
+    public function epg(string $channel_id): array
     {
         $data = array('sRef' => $channel_id, 'sessionid' => '0');
         $response = $this->session->post('web/epgservice', ['Cache-Control'=>'no-cache,no-store'], $data);
@@ -36,7 +36,7 @@ class epg extends common
      * @throws FileNotFoundException Channel list file not found
      * @return objects\event[] Array with event objects
      */
-    public function epg_channel_name(string $channel_name, string $channel_file)
+    public function epg_channel_name(string $channel_name, string $channel_file): array
     {
         $this->load_channel_list($channel_file);
         $channel_id = array_search($channel_name, $this->channels);
@@ -50,7 +50,7 @@ class epg extends common
      * @return SimpleXMLElement
      * @throws DreamboxHTTPException
      */
-    public function channels()
+    public function channels(): SimpleXMLElement
     {
         $data = 'bRef=1:7:1:0:0:0:0:0:0:0:(type == 1) || (type == 17) || (type == 22) || (type == 195) || (type == 25) ORDER BY name&sessionid=0';
         $response = $this->session->post('web/epgnownext', [], $data);
@@ -63,7 +63,7 @@ class epg extends common
      * @return array Array with channel id as key and name as value
      * @throws DreamboxHTTPException
      */
-    public function channel_list()
+    public function channel_list(): array
     {
         $channels = [];
         foreach($this->channels()->{'e2event'} as $channel)
@@ -92,7 +92,7 @@ class epg extends common
      * @return objects\event[] Array with event objects
      * @throws DreamboxHTTPException
      */
-    public function search(string $query)
+    public function search(string $query): array
     {
         $response = $this->session->post('web/epgsearch', [], ['search'=>$query, 'sessionid'=>'0']);
         if(!$response->success)
