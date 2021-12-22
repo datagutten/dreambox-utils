@@ -120,6 +120,18 @@ class timer
     public bool $delete_old = false;
     public int $sessionId = 0;
 
+    public function __construct($channel_id = '', int $start = 0, int $end = 0, string $name = '')
+    {
+        if (!empty($channel_id))
+            $this->channel_id = $channel_id;
+        if (!empty($start))
+            $this->time_begin = $start;
+        if (!empty($end))
+            $this->time_end = $end;
+        if (!empty($name))
+            $this->name = $name;
+    }
+
     /**
      * Parse timer list XML
      * @param string $xml XML string with root element e2timerlist

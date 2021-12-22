@@ -146,26 +146,32 @@ class timer extends common
             throw new DreamboxHTTPException($response);
         return objects\timer::parse($response->body);
     }
+
     /**
-     * @param string $channel
-     * @param int $start
-     * @param int $end
-     * @param int $margin
+     * Check if the dreambox has a timer
+     * @param string $channel Channel name
+     * @param int $start Start timestamp
+     * @param int $end End timestamp
+     * @param bool $partial Return partial timer
      * @return objects\timer|false
      * @throws DreamboxException
      */
-    public function has_timer(string $channel, int $start, int $end, $margin = 10)
+    public function has_timer(string $channel, int $start, int $end, bool $partial=false)
     {
         $channel_id = $this->channel_id($channel);
         if(empty($this->timers))
             $this->timers = $this->get_timers();
 
-        foreach($this->timers as $timer)
+        foreach($this->timers as $key=>$timer)
         {
             if($timer->channel_id != $channel_id)
                 continue;
-            if(date('Y-m-d', $timer->time_begin)!=date('Y-m-d', $start))
-                continue;
+
+            if($timer->time_begin > $end || $timer->time_end < $start)
+                continue; //Timer is outside queried range
+
+            if($partial)
+                return $timer;
 
             if($timer->time_begin > $start)
             {

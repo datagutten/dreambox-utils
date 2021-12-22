@@ -132,6 +132,36 @@ class timerTest extends TestCase
         $this->assertInstanceOf(objects\timer::class, $status);
     }
 
+    public function testHasNotTimer()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 00:55'), strtotime('2020-11-16 01:05'));
+        $this->assertFalse($status);
+    }
+
+    public function testHasTimerOffset()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->timers = [
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('2021-11-06 23:00'), strtotime('2021-11-06 01:00')),
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('2021-12-21 22:55'), strtotime('2021-12-22 01:05')),
+        ];
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2021-12-21 23:00'), strtotime('2021-12-22 01:00'));
+        $this->assertSame($timer->timers[1], $status);
+    }
+
+    public function testHasTimerMidnight()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->debug =true;
+        $timer->timers = [
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('2021-11-06 23:00'), strtotime('2021-11-06 01:00')),
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('2021-12-21 23:00'), strtotime('2021-12-22 01:00')),
+        ];
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('2021-12-21 23:00'), strtotime('2021-12-22 01:00'));
+        $this->assertSame($timer->timers[1], $status);
+    }
+
     public function testHasTimerDebug()
     {
         date_default_timezone_set('Europe/Oslo');
@@ -139,6 +169,26 @@ class timerTest extends TestCase
         $timer->debug = true;
         $timer->has_timer('Nat Geo HD (N)', strtotime('2020-11-16 03:55'), strtotime('2020-11-16 05:05'));
         $this->expectOutputRegex('/Recording start: 2020-11-16 03:55 program start: 2020-11-16 03:55\s+/');
+    }
+
+    public function testHasPartialTimer()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+        $timer->timers = [
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('01:00'), strtotime('02:00')),
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('09:00'), strtotime('11:00')),
+            new objects\timer('1:0:19:EDE:E:46:FFFF019A:0:0:0:', strtotime('03:00'), strtotime('05:00')),
+        ];
+
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('04:00'), strtotime('08:00'));
+        $this->assertFalse($status);
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('04:00'), strtotime('08:00'), true);
+        $this->assertInstanceOf(objects\timer::class, $status);
+        $this->assertSame($timer->timers[2], $status);
+
+        $status = $timer->has_timer('Nat Geo HD (N)', strtotime('08:00'), strtotime('10:00'), true);
+        $this->assertInstanceOf(objects\timer::class, $status);
+        $this->assertSame($timer->timers[1], $status);
     }
 
     public function testWrongXML()
