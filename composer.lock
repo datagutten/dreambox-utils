@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "beecbc5e96c2bd3b0d999297235b53f8",
+    "content-hash": "cb0e5095818c2dfd25714bfa5810328a",
     "packages": [
         {
             "name": "datagutten/tools",
@@ -2233,7 +2233,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1",
+        "php": ">=7.4",
         "ext-simplexml": "*",
         "ext-json": "*"
     },
