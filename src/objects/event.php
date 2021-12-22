@@ -13,37 +13,37 @@ class event extends XMLData
      */
     public $id;
     /**
-     * @var int
+     * @var int Event start time as unix timestamp
      */
-    public $start;
+    public int $start;
+    /**
+     * @var int Event duration in seconds
+     */
+    public int $duration;
     /**
      * @var int
      */
-    public $duration;
+    public int $current_time;
     /**
-     * @var int
+     * @var string Event title
      */
-    public $current_time;
+    public string $title;
     /**
-     * @var string
+     * @var string Event description
      */
-    public $title;
-    /**
-     * @var string
-     */
-    public $description;
+    public string $description;
     /**
      * @var string
      */
-    public $description_extended;
+    public string $description_extended;
     /**
-     * @var string
+     * @var string Channel id
      */
-    public $service_reference;
+    public string $service_reference;
     /**
-     * @var string
+     * @var string Channel name
      */
-    public $service_name;
+    public string $service_name;
 
     public function __construct(SimpleXMLElement $xml)
     {
