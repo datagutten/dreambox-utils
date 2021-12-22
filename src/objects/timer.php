@@ -6,6 +6,7 @@ namespace datagutten\dreambox\web\objects;
 
 class timer
 {
+    public static $after_event_text = [0 => 'Do nothing', 1 => 'Standby', 2 => 'Shutdown', 3 => 'Auto'];
     public $xml;
     /**
      * @var string
@@ -66,11 +67,11 @@ class timer
     /**
      * @var int
      */
-    public $after_event;
+    public $after_event = 3; //Auto
     /**
-     * @var string
+     * @var string Recording path
      */
-    public $location;
+    public $location = '/media/hdd/movie/';
     /**
      * @var string
      */
@@ -102,7 +103,7 @@ class timer
     /**
      * @var int
      */
-    public $repeated;
+    public $repeated = 0;
     /**
      * @var bool
      */
