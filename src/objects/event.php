@@ -68,6 +68,6 @@ class event extends XMLData
      */
     public static function parse(string $xml): array
     {
-        return parent::parse_string($xml, 'e2eventlist', self::class);
+        return parent::parse_string($xml, 'e2eventlist');
     }
 }
