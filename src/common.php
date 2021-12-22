@@ -20,7 +20,7 @@ class common
     public Requests\Session $session;
 
     /**
-     * @var array Array with channel names as values and dreambox channel ids as keys
+     * @var string[] Array with channel names as values and dreambox channel ids as keys
      */
     public array $channels;
 

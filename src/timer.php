@@ -91,9 +91,12 @@ class timer extends common
      * @throws DreamboxException Error adding timer
      * @throws DreamboxHTTPException
      */
-    public function add_timer_obj(objects\timer $timer): string
+    public function add_timer_obj(objects\timer $timer, $extra_args = []): string
     {
-        $response = $this->session->post('web/timerchange', [], $timer->array());
+        $data = $timer->array();
+        if(!empty($extra_args))
+            $data = array_merge($data, $extra_args);
+        $response = $this->session->post('web/timerchange', [], $data);
         if (!$response->success)
             throw new DreamboxHTTPException($response);
         $state = objects\result::parse($response->body);
@@ -104,6 +107,31 @@ class timer extends common
             $this->timers[] = $timer;
             return $state->state_text;
         }
+    }
+
+    public function replace_timer(objects\timer $old, objects\timer $new): string
+    {
+        $new->delete_old = true;
+        $data = [
+            'channelOld' => $old->channel_id,
+            'beginOld' => $old->time_begin,
+            'endOld' => $old->time_end
+        ];
+
+        $text = $this->add_timer_obj($new, $data);
+
+        //Remove old timer from cache
+        foreach ($this->timers as $key => $timer)
+        {
+            if ($timer === $old)
+            {
+                unset($this->timers[$key]);
+                break;
+            }
+        }
+
+        $this->timers[] = $new; //Add the new timer to cache
+        return $text;
     }
 
     /**

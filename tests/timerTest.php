@@ -148,4 +148,35 @@ class timerTest extends TestCase
         $this->expectExceptionMessage('Expected root element e2timerlist, e2eventlist provided');
         datagutten\dreambox\web\objects\timer::parse(file_get_contents($xml_file));
     }
+
+    public function testReplaceTimer()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+
+        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1->time_begin = strtotime('08:00');
+        $timer1->time_end = strtotime('09:00');
+        $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
+        $timer1->name = 'short';
+
+        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2->time_begin = strtotime('08:00');
+        $timer2->time_end = strtotime('09:30');
+        $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
+        $timer2->name = 'merged';
+
+        $timer->add_timer_obj($timer1);
+        $this->assertContains($timer1, $timer->timers);
+        $this->assertNotContains($timer2, $timer->timers);
+        $timer_check = $timer->has_timer('Nat Geo HD (N)', $timer1->time_begin, $timer1->time_end);
+        $this->assertSame($timer1, $timer_check);
+        $timer_check = $timer->has_timer('Nat Geo HD (N)', $timer1->time_begin, $timer2->time_end);
+        $this->assertFalse($timer_check);
+
+        $timer->replace_timer($timer1, $timer2);
+        $this->assertContains($timer2, $timer->timers);
+        $this->assertNotContains($timer1, $timer->timers);
+        $timer_check = $timer->has_timer('Nat Geo HD (N)', $timer2->time_begin, $timer2->time_end);
+        $this->assertSame($timer2, $timer_check);
+    }
 }
