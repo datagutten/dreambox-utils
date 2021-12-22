@@ -1,18 +1,19 @@
-<?php
+<?php /** @noinspection PhpUnhandledExceptionInspection */
 
+namespace datagutten\dreambox\web_tests;
+use datagutten\dreambox\web\objects;
+use InvalidArgumentException;
 
-use PHPUnit\Framework\TestCase;
-
-class TimerMergeTest extends TestCase
+class TimerMergeTest extends DreamboxTestCase
 {
     public function testMerge()
     {
-        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1 = new objects\timer();
         $timer1->time_begin = strtotime('08:00');
         $timer1->time_end = strtotime('09:00');
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
 
-        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2 = new objects\timer();
         $timer2->time_begin = strtotime('08:30');
         $timer2->time_end = strtotime('09:30');
         $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
@@ -26,12 +27,12 @@ class TimerMergeTest extends TestCase
 
     public function testMergeReverse()
     {
-        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1 = new objects\timer();
         $timer1->time_begin = strtotime('08:00');
         $timer1->time_end = strtotime('09:00');
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
 
-        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2 = new objects\timer();
         $timer2->time_begin = strtotime('08:30');
         $timer2->time_end = strtotime('09:30');
         $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
@@ -45,12 +46,12 @@ class TimerMergeTest extends TestCase
 
     public function testMergeDifferentChannel()
     {
-        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1 = new objects\timer();
         $timer1->time_begin = strtotime('08:00');
         $timer1->time_end = strtotime('09:00');
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
 
-        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2 = new objects\timer();
         $timer2->time_begin = strtotime('08:30');
         $timer2->time_end = strtotime('09:30');
         $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:1:';
@@ -62,12 +63,12 @@ class TimerMergeTest extends TestCase
 
     public function testMergeDifferentTime()
     {
-        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1 = new objects\timer();
         $timer1->time_begin = strtotime('08:00');
         $timer1->time_end = strtotime('09:00');
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
 
-        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2 = new objects\timer();
         $timer2->time_begin = strtotime('09:50');
         $timer2->time_end = strtotime('10:20');
         $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:1:';

@@ -18,7 +18,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "datagutten\\dreambox\\web\\": "src"
+            "datagutten\\dreambox\\web\\": "src",
+            "datagutten\\dreambox\\web_tests\\": "tests"
         }
     },
     "bin": ["utils/save_channels.php"],

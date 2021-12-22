@@ -1,27 +1,14 @@
-<?php
+<?php /** @noinspection PhpUnhandledExceptionInspection */
 
+namespace datagutten\dreambox\web_tests;
 
 use datagutten\dreambox\web\epg;
 use datagutten\dreambox\web\objects;
 use datagutten\tools\files\files;
-use PHPUnit\Framework\TestCase;
+use SimpleXMLElement;
 
-class epgTest extends TestCase
+class epgTest extends DreamboxTestCase
 {
-    /**
-     * @var string
-     */
-    private $dreambox_ip;
-
-    public function setUp(): void
-    {
-        $ip_env = getenv('DREAMBOX_IP');
-        if (!empty($ip_env))
-            $this->dreambox_ip = $ip_env;
-        else
-            $this->dreambox_ip = '127.0.0.1';
-    }
-
     public function testEpg()
     {
         $epg = new epg($this->dreambox_ip);

@@ -1,32 +1,24 @@
 <?php /** @noinspection PhpUnhandledExceptionInspection */
 
+namespace datagutten\dreambox\web_tests;
 
 use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use datagutten\dreambox\web\objects;
 use datagutten\dreambox\web\timer;
 use datagutten\tools\files\files;
-use PHPUnit\Framework\TestCase;
+use InvalidArgumentException;
 
-class timerTest extends TestCase
+class timerTest extends DreamboxTestCase
 {
     /**
      * @var string
      */
-    private $channel_file;
-    /**
-     * @var array|false|string
-     */
-    private $dreambox_ip;
+    private string $channel_file;
 
     function setUp(): void
     {
-        //$string = '"1:0:19:12D:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3","1:0:19:515:9:46:FFFF016A:0:0:0:":"NRK Super\/NRK3 Lydteks","1:0:1:5EC:1:46:FFFF014A:0:0:0:":"NRK Tegnspr\u00e5k"';
-        $ip_env = getenv('DREAMBOX_IP');
-        if(!empty($ip_env))
-            $this->dreambox_ip = $ip_env;
-        else
-            $this->dreambox_ip = '127.0.0.1';
+        parent::setUp();
         $this->channel_file = files::path_join(__DIR__, 'test_channels_127.0.0.1.json');
     }
 
@@ -196,20 +188,20 @@ class timerTest extends TestCase
         $xml_file = files::path_join(__DIR__, 'emulator', 'data', 'epgnownext.xml');
         $this->expectException(InvalidArgumentException::class);
         $this->expectExceptionMessage('Expected root element e2timerlist, e2eventlist provided');
-        datagutten\dreambox\web\objects\timer::parse(file_get_contents($xml_file));
+        objects\timer::parse(file_get_contents($xml_file));
     }
 
     public function testReplaceTimer()
     {
         $timer = new timer($this->dreambox_ip, $this->channel_file);
 
-        $timer1 = new datagutten\dreambox\web\objects\timer();
+        $timer1 = new objects\timer();
         $timer1->time_begin = strtotime('08:00');
         $timer1->time_end = strtotime('09:00');
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
         $timer1->name = 'short';
 
-        $timer2 = new datagutten\dreambox\web\objects\timer();
+        $timer2 = new objects\timer();
         $timer2->time_begin = strtotime('08:00');
         $timer2->time_end = strtotime('09:30');
         $timer2->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';

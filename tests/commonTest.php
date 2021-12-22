@@ -1,12 +1,14 @@
-<?php
+<?php /** @noinspection PhpUnhandledExceptionInspection */
 
+namespace datagutten\dreambox\web_tests;
 
 use datagutten\dreambox\web\common;
 use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
-use PHPUnit\Framework\TestCase;
+use FileNotFoundException;
+use InvalidArgumentException;
 
-class commonTest extends TestCase
+class commonTest extends DreamboxTestCase
 {
     public function testEmptyAddress()
     {
@@ -30,7 +32,7 @@ class commonTest extends TestCase
     public function testLoadChannelListInvalid()
     {
         $this->expectException(FileNotFoundException::class);
-        $common = new common('127.0.0.1');
+        $common = new common($this->dreambox_ip);
         $common->load_channel_list('bad');
     }
 
@@ -38,7 +40,7 @@ class commonTest extends TestCase
     {
         $this->expectException(DreamboxException::class);
         $this->expectExceptionMessage('Channel list empty');
-        $common = new common('127.0.0.1');
+        $common = new common($this->dreambox_ip);
         $fp = tmpfile();
         fwrite($fp, json_encode([]));
         $path = stream_get_meta_data($fp)['uri'];
