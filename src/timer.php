@@ -8,18 +8,17 @@ use datagutten\dreambox\web\exceptions\DreamboxException;
 use datagutten\dreambox\web\exceptions\DreamboxHTTPException;
 use datagutten\dreambox\web\objects;
 use FileNotFoundException;
-use InvalidArgumentException;
 
 class timer extends common
 {
     /**
      * @var bool Show debugging information
      */
-    public $debug = false;
+    public bool $debug = false;
     /**
      * @var timer[] Timers on dreambox
      */
-    public $timers;
+    public array $timers;
 
     /**
      * timer constructor.
@@ -35,28 +34,12 @@ class timer extends common
         $this->timers = $this->get_timers();
     }
 
-    public $timer_template=array(
-        'sRef'=>false,
-        'begin'=>false,
-        'end'=>false,
-        'name'=>false,
-        'description'=>'',
-        'dirname'=>'/media/hdd/movie/',
-        'tags'=>'',
-        'afterevent'=>'3',
-        'eit'=>'0',
-        'disabled'=>'0',
-        'justplay'=>'0',
-        'repeated'=>'0',
-        'deleteOldOnSave'=>'0',
-        'sessionid'=>'0');
-
     /**
      * @param string $channel_name Channel name
      * @throws DreamboxException Channel id not found
      * @return string Channel id
      */
-    function channel_id(string $channel_name)
+    function channel_id(string $channel_name): string
     {
         $channel_id = array_search($channel_name, $this->channels);
         if ($channel_id === false)
@@ -66,11 +49,12 @@ class timer extends common
     }
 
     /**
+     * Resolve a channel id to channel name
      * @param string $channel_id Channel id
-     * @return mixed
+     * @return string
      * @throws DreamboxException
      */
-    function channel_id_reverse(string $channel_id)
+    function channel_id_reverse(string $channel_id): string
     {
         if(!isset($this->channels[$channel_id]))
             throw new DreamboxException('No channel found for id '.$channel_id);
@@ -127,7 +111,7 @@ class timer extends common
      * @return objects\timer[]
      * @throws DreamboxHTTPException
      */
-    public function get_timers()
+    public function get_timers(): array
     {
         $response = $this->session->get('web/timerlist');
         if(!$response->success)
