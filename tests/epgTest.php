@@ -76,4 +76,18 @@ class epgTest extends TestCase
         $this->assertArrayHasKey('1:0:1:26F:5:46:FFFF0122:0:0:0:', $channels);
         $this->assertSame('Cartoon Network', $channels['1:0:1:26F:5:46:FFFF0122:0:0:0:']);
     }
+
+    public function testTimerFromEvent()
+    {
+        $epg = new epg($this->dreambox_ip);
+        $epg_events = $epg->epg('1:0:19:EDE:E:46:FFFF019A:0:0:0:');
+        $this->assertIsArray($epg_events);
+        $event = $epg_events[11];
+        $this->assertInstanceOf(objects\event::class, $event);
+        $this->assertEquals('Supercar Megabuild', $event->title);
+        $timer = objects\timer::from_event($event);
+        $this->assertInstanceOf(objects\timer::class, $timer);
+        $this->assertEquals($event->start, $timer->time_begin);
+        $this->assertEquals($event->start + $event->duration, $timer->time_end);
+    }
 }

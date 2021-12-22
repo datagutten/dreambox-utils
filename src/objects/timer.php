@@ -183,4 +183,17 @@ class timer
         $merged->time_end = $last->time_end;
         return $merged;
     }
+
+    public static function from_event(event $event, $margin = 0): timer
+    {
+        $timer = new static();
+        $timer->time_begin = $event->start - $margin;
+        $timer->time_end = $event->start + $event->duration + $margin;
+        $timer->name = $event->title;
+        $timer->description = $event->description;
+        $timer->description_extended = $event->description_extended;
+        $timer->channel_id = $event->service_reference;
+        $timer->channel_name = $event->service_name;
+        return $timer;
+    }
 }
