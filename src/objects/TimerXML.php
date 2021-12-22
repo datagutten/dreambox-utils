@@ -34,7 +34,7 @@ class TimerXML extends XMLData
         $this->timer->after_event = $this->int('e2afterevent');
         $this->timer->location = $this->string('e2location');
         $this->timer->tags = $this->string('e2tags');
-        $this->timer->log_entries = $this->string('e2logentries');
+        $this->timer->log_entries = $this->parse_log($this->string('e2logentries'));
         $this->timer->file_name = $this->string('e2filename');
         $this->timer->back_off = $this->string('e2backoff');
         $this->timer->next_activation = $this->int('e2nextactivation');
@@ -43,5 +43,16 @@ class TimerXML extends XMLData
         $this->timer->repeated = $this->int('e2repeated');
         $this->timer->dont_save = $this->bool('e2dontsave');
         $this->timer->canceled = $this->bool('e2cancled');
+    }
+
+    public function parse_log($log): array
+    {
+        $entries = [];
+        preg_match_all('#\(([0-9]+), ([0-9]+), [\'"](.+?)[\'"]\)(?:, )?#', $log, $matches);
+        for ($i = 0; $i < count($matches[0]); $i++)
+        {
+            $entries[] = [(int)$matches[1][$i], (int)$matches[2][$i], $matches[3][$i]];
+        }
+        return $entries;
     }
 }

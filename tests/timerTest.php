@@ -114,6 +114,8 @@ class timerTest extends DreamboxTestCase
         $this->assertIsArray($timers);
         $this->assertInstanceOf(objects\timer::class, $timers[0]);
         $this->assertSame('Nat Geo HD (N)', $timers[1]->channel_name);
+        $this->assertIsArray($timers[1]->log_entries);
+        $this->assertIsArray($timers[2]->log_entries[1]);
     }
 
     public function testHasTimer()

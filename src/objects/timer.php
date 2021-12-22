@@ -78,9 +78,9 @@ class timer
      */
     public string $tags = '';
     /**
-     * @var string
+     * @var array Timer log entries
      */
-    public string $log_entries;
+    public array $log_entries;
     /**
      * @var string
      */
