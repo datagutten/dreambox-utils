@@ -6,112 +6,117 @@ namespace datagutten\dreambox\web\objects;
 
 class timer
 {
-    public static $after_event_text = [0 => 'Do nothing', 1 => 'Standby', 2 => 'Shutdown', 3 => 'Auto'];
-    public $xml;
+    public static array $after_event_text = [0 => 'Do nothing', 1 => 'Standby', 2 => 'Shutdown', 3 => 'Auto'];
     /**
      * @var string
      */
-    public $channel_id;
+    public string $channel_id;
     /**
      * @var string
      */
-    public $channel_name;
+    public string $channel_name;
     /**
      * @var string
      */
-    public $eit;
+    public string $eit;
     /**
      * @var string
      */
-    public $name;
+    public string $name;
     /**
      * @var string
      */
-    public $description;
+    public string $description = '';
     /**
      * @var string
      */
-    public $description_extended;
+    public string $description_extended;
     /**
      * @var bool
      */
-    public $disabled;
+    public bool $disabled = false;
     /**
      * @var int Timer start
      */
-    public $time_begin;
+    public int $time_begin;
     /**
      * @var int Timer start, alias for time_begin
      */
-    public $start;
+    public int $start;
     /**
      * @var int Timer end
      */
-    public $time_end;
+    public int $time_end;
     /**
      * @var int Timer end, alias for time_end
      */
     public $end;
     /**
-     * @var int
+     * @var int Timer duration
      */
-    public $duration;
+    public int $duration;
     /**
      * @var int
      */
-    public $start_prepare;
+    public int $start_prepare;
     /**
      * @var bool
      */
-    public $just_play;
+    public bool $just_play;
     /**
-     * @var int
+     * @var int What to do after event
      */
-    public $after_event = 3; //Auto
+    public int $after_event = 3; //Auto
     /**
      * @var string Recording path
      */
-    public $location = '/media/hdd/movie/';
+    public string $location = '/media/hdd/movie/';
     /**
      * @var string
      */
-    public $tags;
+    public string $tags;
     /**
      * @var string
      */
-    public $log_entries;
+    public string $log_entries;
     /**
      * @var string
      */
-    public $file_name;
+    public string $file_name;
     /**
      * @var string
      */
-    public $back_off;
+    public string $back_off;
     /**
      * @var int
      */
-    public $next_activation;
+    public int $next_activation;
     /**
      * @var bool
      */
-    public $first_try_prepare;
+    public bool $first_try_prepare;
     /**
      * @var int
      */
-    public $state;
+    public int $state;
     /**
      * @var int
      */
-    public $repeated = 0;
+    public int $repeated = 0;
     /**
      * @var bool
      */
-    public $dont_save;
+    public bool $dont_save;
     /**
      * @var bool
      */
-    public $canceled;
+    public bool $canceled;
+
+    /**
+     * @var bool Delete old timers on save
+     */
+    public bool $delete_old = false;
+    public int $sessionId = 0;
 
     /**
      * Parse timer list XML

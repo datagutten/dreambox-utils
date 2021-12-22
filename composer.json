@@ -3,7 +3,7 @@
     "description": "Manage timers and get EPG data from dreambox",
     "type": "library",
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.4",
         "rmccue/requests": "^2.0",
         "datagutten/tools": "^1.8",
         "ext-simplexml": "*",
