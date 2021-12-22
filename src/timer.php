@@ -89,16 +89,13 @@ class timer extends common
      * @param objects\timer $timer Timer object
      * @return string Response from dreambox
      * @throws DreamboxException Error adding timer
-     * @throws DreamboxHTTPException
      */
     public function add_timer_obj(objects\timer $timer, $extra_args = []): string
     {
         $data = $timer->array();
         if(!empty($extra_args))
             $data = array_merge($data, $extra_args);
-        $response = $this->session->post('web/timerchange', [], $data);
-        if (!$response->success)
-            throw new DreamboxHTTPException($response);
+        $response = $this->post('web/timerchange', [], $data);
         $state = objects\result::parse($response->body);
         if ($state->state === false)
             throw new DreamboxException($state->state_text);
@@ -144,13 +141,11 @@ class timer extends common
     /**
      * Get timers from dreambox
      * @return objects\timer[]
-     * @throws DreamboxHTTPException
+     * @throws DreamboxException
      */
     public function get_timers(): array
     {
-        $response = $this->session->get('web/timerlist');
-        if(!$response->success)
-            throw new DreamboxHTTPException($response);
+        $response = $this->get('web/timerlist');
         return objects\timer::parse($response->body);
     }
 

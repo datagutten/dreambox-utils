@@ -17,7 +17,7 @@ class common
     /**
      * @var Requests\Session
      */
-    public Requests\Session $session;
+    private Requests\Session $session;
 
     /**
      * @var string[] Array with channel names as values and dreambox channel ids as keys
@@ -36,9 +36,7 @@ class common
             throw new InvalidArgumentException('Dreambox IP empty');
         $this->dreambox_ip = $dreambox_ip;
         $this->session = new Requests\Session('http://' . $dreambox_ip . '/', [], [], ['timeout' => 60]);
-        $response = $this->session->get('');
-        if(!$response->success)
-            throw new DreamboxHTTPException($response);
+        $response = $this->get('');
 
         if(strpos($response->body, 'Dreambox WebControl')===false)
             throw new DreamboxException(sprintf('Dreambox not found at %s', $response->url));
@@ -58,5 +56,65 @@ class common
         $this->channels = json_decode($data, true);
         if(empty($this->channels))
             throw new DreamboxException('Channel list empty');
+    }
+
+    /**
+     * @param string $url URL to request
+     * @param array $headers Extra headers to send with the request
+     * @param array|string|null $data Data to send either as a query string for GET/HEAD requests, or in the body for POST requests
+     * @param string $type HTTP request type (use \WpOrg\Requests\Requests constants)
+     * @param array $options Options for the request (see {@see \WpOrg\Requests\Requests::request()})
+     * @return Requests\Response
+
+     * @throws DreamboxException On invalid URLs (`nonhttp`)
+     * @throws DreamboxHTTPException On HTTP errors
+     */
+    protected function request(string $url, array $headers = [], $data = [], string $type = Requests\Requests::GET, array $options = []): Requests\Response
+    {
+        try
+        {
+            $response = $this->session->request($url, $headers, $data, $type, $options);
+        }
+        catch (Requests\Exception $e)
+        {
+            throw new DreamboxException($e->getMessage(), $e->getCode(), $e);
+        }
+        if (!$response->success)
+            throw new DreamboxHTTPException($response);
+        return $response;
+    }
+
+    /**
+     * Send a GET request
+     *
+     * @param string $url URL to request
+     * @param array $headers Extra headers to send with the request
+     * @param array $options Options for the request (see {@see \WpOrg\Requests\Requests::request()})
+     * @return Requests\Response
+     *
+     * @throws DreamboxException On invalid URLs (`nonhttp`)
+     * @throws DreamboxHTTPException On HTTP errors
+     */
+    public function get(string $url, array $headers = [], array $options = []): Requests\Response
+    {
+        return $this->request($url, $headers, null, Requests\Requests::GET, $options);
+    }
+
+    /**
+     * Send a POST request
+     *
+     * @param string $url URL to request
+     * @param array $headers Extra headers to send with the request
+     * @param array|string|null $data Data to send either as a query string for GET/HEAD requests, or in the body for POST requests
+     * @param array $options Options for the request (see {@see \WpOrg\Requests\Requests::request()})
+     * @return Requests\Response
+     *
+     * @throws DreamboxException On invalid URLs (`nonhttp`)
+     * @throws DreamboxHTTPException On HTTP errors
+     * @see \WpOrg\Requests\Session::request()
+     */
+    public function post(string $url, array $headers = [], $data = [], array $options = []): Requests\Response
+    {
+        return $this->request($url, $headers, $data, Requests\Requests::POST, $options);
     }
 }
