@@ -155,4 +155,32 @@ class timer
             'sessionId' => $this->sessionId
         ];
     }
+
+    /**
+     * Merge the current timer with an overlapping timer
+     * @param timer $timer Timer to merge
+     * @return timer Merged timer
+     */
+    public function merge(timer $timer): timer
+    {
+        if ($this->time_begin < $timer->time_begin)
+        {
+            $first = $this;
+            $last = $timer;
+        }
+        else
+        {
+            $first = $timer;
+            $last = $this;
+        }
+
+        if ($first->time_end < $last->time_begin)
+            throw new InvalidArgumentException('Timers does not overlap');
+        if ($first->channel_id != $last->channel_id)
+            throw new InvalidArgumentException('Timers are from different channels');
+        $merged = clone($first);
+
+        $merged->time_end = $last->time_end;
+        return $merged;
+    }
 }
