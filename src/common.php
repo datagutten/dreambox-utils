@@ -35,7 +35,7 @@ class common
         if(empty($dreambox_ip))
             throw new InvalidArgumentException('Dreambox IP empty');
         $this->dreambox_ip = $dreambox_ip;
-        $this->session = new Requests\Session('http://'.$dreambox_ip.'/');
+        $this->session = new Requests\Session('http://' . $dreambox_ip . '/', [], [], ['timeout' => 60]);
         $response = $this->session->get('');
         if(!$response->success)
             throw new DreamboxHTTPException($response);
