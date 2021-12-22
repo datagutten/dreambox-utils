@@ -140,16 +140,17 @@ class timer extends common
      * @param int $end
      * @param int $margin
      * @return objects\timer|false
-     * @throws DreamboxHTTPException
+     * @throws DreamboxException
      */
     public function has_timer(string $channel, int $start, int $end, $margin = 10)
     {
+        $channel_id = $this->channel_id($channel);
         if(empty($this->timers))
             $this->timers = $this->get_timers();
 
         foreach($this->timers as $timer)
         {
-            if($timer->channel_name != $channel)
+            if($timer->channel_id != $channel_id)
                 continue;
             if(date('Y-m-d', $timer->time_begin)!=date('Y-m-d', $start))
                 continue;
