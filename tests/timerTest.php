@@ -29,6 +29,15 @@ class timerTest extends DreamboxTestCase
         $this->assertSame('NRK Super/NRK3', $timer->channels['1:0:19:12D:9:46:FFFF016A:0:0:0:']);
     }
 
+    public function test__constructTimer()
+    {
+        $timer = new objects\timer('1:0:19:12D:9:46:FFFF016A:0:0:0:', 10, 20, 'test');
+        $this->assertSame('1:0:19:12D:9:46:FFFF016A:0:0:0:', $timer->channel_id);
+        $this->assertSame(10, $timer->time_begin);
+        $this->assertSame(20, $timer->time_end);
+        $this->assertSame('test', $timer->name);
+    }
+
     public function testGetChannelId()
     {
         $timer = new timer($this->dreambox_ip, $this->channel_file);
