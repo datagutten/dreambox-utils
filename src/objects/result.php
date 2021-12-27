@@ -4,6 +4,7 @@
 namespace datagutten\dreambox\web\objects;
 
 
+use RuntimeException;
 use SimpleXMLElement;
 
 class result extends XMLData
@@ -33,6 +34,8 @@ class result extends XMLData
     public static function parse(string $xml): result
     {
         $xml = simplexml_load_string($xml);
+        if($xml===false)
+            throw new RuntimeException(sprintf('Error parsing XML: "%s"', $xml));
         self::validate_element($xml, 'e2simplexmlresult');
         return new self($xml);
     }
