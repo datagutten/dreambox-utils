@@ -232,4 +232,20 @@ class timerTest extends DreamboxTestCase
         $timer_check = $timer->has_timer('Nat Geo HD (N)', $timer2->time_begin, $timer2->time_end);
         $this->assertSame($timer2, $timer_check);
     }
+
+    public function testDeleteTimer()
+    {
+        $timer = new timer($this->dreambox_ip, $this->channel_file);
+
+        $timer1 = new objects\timer();
+        $timer1->time_begin = strtotime('08:00');
+        $timer1->time_end = strtotime('09:00');
+        $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
+        $timer1->name = 'bad';
+
+        $timer->add_timer_obj($timer1);
+        $this->assertContains($timer1, $timer->timers);
+        $timer->delete_timer($timer1);
+        $this->assertNotContains($timer1, $timer->timers);
+    }
 }

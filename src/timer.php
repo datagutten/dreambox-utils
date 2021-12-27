@@ -138,6 +138,33 @@ class timer extends common
         return $text;
     }
 
+    public function delete_timer(objects\timer $timer): string
+    {
+        $data = [
+            'sRef' => $timer->channel_id,
+            'begin' => $timer->time_begin,
+            'end' => $timer->time_end,
+        ];
+
+        $response = $this->post('web/timerdelete', [], $data);
+        $state = objects\result::parse($response->body);
+        if ($state->state === false)
+            throw new DreamboxException($state->state_text);
+        else
+        {
+            //Remove timer from cache
+            foreach ($this->timers as $key => $timer_iter)
+            {
+                if ($timer_iter === $timer)
+                {
+                    unset($this->timers[$key]);
+                    break;
+                }
+            }
+        }
+        return $state->state_text;
+    }
+
     /**
      * Get timers from dreambox
      * @return objects\timer[]
