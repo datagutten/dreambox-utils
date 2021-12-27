@@ -9,6 +9,13 @@ use InvalidArgumentException;
 class timer
 {
     public static array $after_event_text = [0 => 'Do nothing', 1 => 'Standby', 2 => 'Shutdown', 3 => 'Auto'];
+    public static array $event_states = [0 => 'Waiting', 1 => 'Error', 2 => 'Running', 3 => 'Finished'];
+
+    const STATE_WAITING = 0;
+    const STATE_ERROR = 1;
+    const STATE_RUNNING = 2;
+    const STATE_FINISHED = 3;
+
     /**
      * @var string Dreambox channel id
      */
