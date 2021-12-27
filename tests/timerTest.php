@@ -245,7 +245,8 @@ class timerTest extends DreamboxTestCase
 
         $timer->add_timer_obj($timer1);
         $this->assertContains($timer1, $timer->timers);
-        $timer->delete_timer($timer1);
+        $response = $timer->delete_timer($timer1);
+        $this->assertEquals("The timer 'bad' has been deleted successfully", $response);
         $this->assertNotContains($timer1, $timer->timers);
     }
 }
