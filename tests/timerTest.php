@@ -20,6 +20,7 @@ class timerTest extends DreamboxTestCase
     {
         parent::setUp();
         $this->channel_file = files::path_join(__DIR__, 'test_channels_127.0.0.1.json');
+        date_default_timezone_set('Europe/Oslo');
     }
 
     public function test__construct()
