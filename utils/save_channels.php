@@ -3,7 +3,7 @@
 
 use datagutten\dreambox\web\epg;
 
-require __DIR__ . '/loader.php';
+require $_composer_autoload_path ?? __DIR__ . '/../vendor/autoload.php';
 
 try {
     $epg = new epg($argv[1]);
