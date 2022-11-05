@@ -239,8 +239,8 @@ class timerTest extends DreamboxTestCase
         $timer = new timer($this->dreambox_ip, $this->channel_file);
 
         $timer1 = new objects\timer();
-        $timer1->time_begin = strtotime('08:00');
-        $timer1->time_end = strtotime('09:00');
+        $timer1->time_begin = 1640592000;
+        $timer1->time_end = 1640595600;
         $timer1->channel_id = '1:0:19:EDE:E:46:FFFF019A:0:0:0:';
         $timer1->name = 'bad';
 
