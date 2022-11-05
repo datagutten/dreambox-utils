@@ -213,6 +213,7 @@ class timer
         $timer->description_extended = $event->description_extended;
         $timer->channel_id = $event->service_reference;
         $timer->channel_name = $event->service_name;
+        $timer->state = static::STATE_WAITING;
         return $timer;
     }
 }

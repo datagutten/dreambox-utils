@@ -80,6 +80,7 @@ class timer extends common
         $timer->time_end = $end;
         $timer->name = $name;
         $timer->description = $description;
+        $timer->state = objects\timer::STATE_WAITING;
 
         return $this->add_timer_obj($timer);
     }
