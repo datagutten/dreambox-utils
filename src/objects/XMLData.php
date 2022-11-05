@@ -12,26 +12,26 @@ class XMLData
     /**
      * @var SimpleXMLElement
      */
-    public $xml;
+    public SimpleXMLElement $xml;
 
     public function __construct(SimpleXMLElement $xml)
     {
         $this->xml = $xml;
     }
 
-    protected function string($tag)
+    protected function string($tag): string
     {
         return (string)$this->xml->$tag;
     }
 
-    protected function int($tag)
+    protected function int($tag): int
     {
         return (int)$this->xml->$tag;
     }
 
-    protected function bool($tag)
+    protected function bool($tag): bool
     {
-        return $this->xml->$tag === '1' || $this->xml->$tag == 'True';
+        return $this->xml->$tag == '1' || $this->xml->$tag == 'True';
     }
 
     protected static function validate_element(SimpleXMLElement $xml, $element)

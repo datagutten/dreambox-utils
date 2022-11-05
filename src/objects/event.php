@@ -11,7 +11,7 @@ class event extends XMLData
     /**
      * @var int
      */
-    public $id;
+    public int $id;
     /**
      * @var int Event start time as unix timestamp
      */

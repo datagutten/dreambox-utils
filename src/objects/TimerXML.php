@@ -9,7 +9,7 @@ class TimerXML extends XMLData
     /**
      * @var timer
      */
-    public $timer;
+    public timer $timer;
 
     public function __construct(SimpleXMLElement $timer_xml)
     {

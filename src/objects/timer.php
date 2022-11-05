@@ -59,7 +59,7 @@ class timer
     /**
      * @var int Timer end, alias for time_end
      */
-    public $end;
+    public int $end;
     /**
      * @var int Timer duration
      */
